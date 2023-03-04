@@ -1,0 +1,49 @@
+Oracle JInitiator: Version 1.3.1.25
+Using JRE version 1.3.1.25-internal Java HotSpot(TM) Client VM
+User home directory = C:\Users\CIU
+Proxy Configuration: no proxy
+JAR cache enabled
+     Location: C:\Users\CIU\Oracle Jar Cache
+     Maximum size: 50 MB
+     Compression level: 0
+
+----------------------------------------------------
+c:   clear console window
+f:   finalize objects on finalization queue
+g:   garbage collect
+h:   display this help message
+l:   dump classloader list
+m:   print memory usage
+q:   hide console
+s:   dump system properties
+t:   dump thread list
+x:   clear classloader cache
+0-5: set trace level to <n>
+----------------------------------------------------
+Downloading http://opera.ciu.edu.tr/forms/java/frmall_jinit.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/jacob.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/frmwebutil.jar to JAR cache
+RegisterWebUtil - Loading WebUtil Version 10.1.2.3
+Downloading http://opera.ciu.edu.tr/Operajserv/opera.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/icons.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/win.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/Hyperlink.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/OperaPJC.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/FormsGraph.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/notifier.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/batik-awt-util.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/floorplan.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/xmlparserv2.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/HtmlEditor.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/asyncJobCalls.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/forms/java/FormsExtensions.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/OperaScanner.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/CcVault.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/MicrosPaymentApp.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/soap.jar to JAR cache
+Downloading http://opera.ciu.edu.tr/Operajserv/OperaTapi.jar to JAR cache
+proxyHost=null
+proxyPort=0
+connectMode=HTTP, native.
+Forms Applet version is : 10.1.2.3
+Notifier0: Broadcast messages exiting.
