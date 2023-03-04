@@ -1,0 +1,2000 @@
+/**
+1767PX=108 em only for university;
+*/ 
+@media(max-width:111em) {
+    .demarage {
+        position: fixed;
+        top: 13%;
+        left: -3%;
+    
+     
+        
+    }
+    .about-university {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 37rem 1fr 37rem;
+        padding: 0rem 9.5rem 0rem 9.5rem;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        margin-top: 2rem;
+        background: url(image/background10.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/**
+1733PX=108 em
+*/
+@media(max-width:108em) {
+    .query {
+        width: 25rem;
+    }
+
+    .Section-hero {
+        padding: 12.5rem 32.5rem 20rem 17.5rem;
+        margin-top: 9.5rem;
+        margin-bottom: 5.5rem;
+
+
+    }
+
+    .heading-primary {
+        margin-top: 5rem;
+        margin-bottom: 2.4rem;
+        font-size: 4.4rem;
+    }
+
+    .illustration {
+
+        top: 80%;
+        left: 90%;
+
+    }
+
+    table {
+        width: 286px;
+        margin: 0 auto;
+    }
+
+    th,
+    td {
+        /*border: 1px solid #343a40; */
+        padding: 6px 6px;
+        text-align: left;
+        font-size: 1.3rem;
+        text-transform: capitalize;
+    }
+
+    .about-university {
+        grid-template-columns: 30rem 0.4fr 26rem;
+        padding: 0rem 9.5rem 0rem 3.5rem;
+        margin: 25px -25px;
+        row-gap: 0.5rem;
+        column-gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .left1 {
+        overflow-y: scroll;
+        border: 2px solid gainsboro;
+        padding: 0 10px;
+
+    }
+
+    .left1 h1 {
+        font-size: 2.4rem;
+
+    }
+
+
+
+
+
+}
+
+/****
+
+/***
+(@(@
+1535px 96em
+*/
+@media(max-width:96em) {
+.image-ciu {
+    
+    top: 19%;
+    left: 37%;
+    
+   
+}
+
+    .html {
+        font-size: 56.25%;
+    }
+    .demarage {
+        position: fixed;
+        top: 12.9%;
+        left: -3%;
+    
+     
+        
+    }
+
+    .Section-hero {
+        padding: 18.5rem 24.5rem 20rem 5.5rem;
+        margin-top: 9.5rem;
+        margin-bottom: 5.5rem;
+
+
+    }
+
+    .section-uni-video {
+        display: grid;
+        grid-template-columns: 0.4fr 0.4fr;
+        background-color: rgb(255, 255, 255);
+        row-gap: 10.5rem;
+    }
+
+    /*************************GRqole
+    
+element.style {
+}
+@media (max-width: 96em)
+.Section-hero {
+    padding: 6.5rem 21.5rem 0 14.5rem
+rem
+;
+    
+    
+    
+    
+    ************************/
+
+    .hero {
+        max-width: 130;
+        padding: 4.4rem;
+        grid-template-columns: 1.8fr 1.6fr;
+        grid-row: 3rem;
+    }
+
+    .hero-img-text {
+        margin: 5.5rem;
+    }
+
+    .heading-primary {
+        margin-top: 1.6rem;
+        margin-bottom: 1.8rem;
+        font-size: 4rem;
+    }
+
+
+    .illustration {
+
+        top: 55%;
+        left: 90%;
+
+    }
+
+
+
+    .query {
+        width: 25rem;
+
+    }
+
+    .img1 {
+
+        width: 18%;
+        display: block;
+        padding-bottom: 18%;
+
+
+
+
+        top: -6%;
+        right: -18%;
+        transform: translateY(-50%, -50%);
+        border-radius: 50%;
+    }
+
+    /************************************************************* After card ********************************************************************/
+    .card {
+        padding: 5.7rem;
+
+    }
+
+    /************************************************************* After card ********************************************************************/
+    /*************************************Section-uni-video********************/
+    .Section-uni-video {
+        margin-top: 1.5rem;
+    }
+
+
+    .about-university {
+        grid-template-columns: 27rem 0.4fr 27rem;
+        padding: 0rem 4.4rem 0rem 0.4rem;
+        margin: 2rem 30px 58px;
+        row-gap: 0.5rem;
+        column-gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .about-university p {
+        font-size: 1.6rem;
+    }
+
+    .left--video-text h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .left--video-text p {
+        max-width: 75%;
+        margin: 0 auto;
+
+        line-height: 1.5;
+        transform: scale(1.1);
+        box-shadow: 0 1.2rem 3.2rem rgb(29 27 27 / 3%);
+        background-color: aliceblue;
+        padding: 2rem;
+    }
+
+    .univ-logos-left {
+        margin-top: -10.5rem;
+        width: 17rem;
+        text-align: center;
+        z-index: 3;
+    }
+
+
+    .center1 {
+
+        padding: 2rem 0;
+        margin: 0 1.2rem;
+
+    }
+
+    .text-center {
+        width: 700px;
+    }
+
+    .video-about {
+        width: 700px;
+    }
+
+    .accordion-item-header {
+        padding: 0 2rem;
+
+    }
+
+    table {
+        width: 252px;
+        margin: 0 auto;
+    }
+
+    th,
+    td {
+        /* border: 1px solid #343a40; */
+        padding: 6px 6px;
+        text-align: left;
+        font-size: 1.3rem;
+        text-transform: capitalize;
+    }
+
+
+
+
+    .table-view {
+        width: 720px;
+    }
+
+    /****************************************Section-uni-video*****************/
+
+}
+
+/********************************* Small laptop************************************
+1344px=84em
+/*********************************************************************************/
+@media (max-width:84em) {
+    header {
+        padding: 3.2rem 12.5rem 20rem 12.5rem;
+        justify-content: center;
+
+    }
+     .demarage {
+        position: fixed;
+        top: 12.9%;
+        left: -3%;
+    
+     
+        
+    }
+
+    .btn-mobile-nav {
+        display: none;
+    }
+
+    .logo {
+
+        border-radius: 150px;
+        height: 12.3rem;
+    }
+
+    .Section-hero {
+        padding: 18.5rem 23.5rem 8.5rem 8.5rem;
+        margin-top: 9.5rem;
+        margin-bottom: 5.5rem;
+
+
+
+    }
+
+    .hero {
+        max-width: 130;
+        padding: 4.4rem;
+        grid-template-columns: 1.8fr 1.6fr;
+        grid-row: 7rem;
+    }
+
+    .heading-primary {
+        margin-top: 5rem;
+        margin-bottom: 1.8rem;
+        font-size: 3.2rem;
+    }
+
+    .heading-discription {
+        font-size: 2.4rem;
+        font-weight: 500;
+    }
+
+    .hero {
+        max-width: 130;
+        padding: 0 6.4rem;
+        grid-template-columns: 1.8fr 1.8fr;
+        grid-row: 6rem;
+    }
+
+    .section--video {
+        margin: 0 auto;
+    }
+
+    .illustration {
+
+        top: 60%;
+        left: 90%;
+
+    }
+
+    .left-paragraphe {
+        width: 570px;
+        margin: 0 auto;
+    }
+
+    .video--iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+
+    }
+
+    .video--iframe {
+        border: none;
+        width: 100%;
+        height: 121%;
+        margin: auto;
+    }
+
+    .img1 {
+
+        width: 22%;
+        display: block;
+        padding-bottom: 22%;
+
+
+
+
+        top: -6%;
+        right: -21%;
+        transform: translateY(-50%, -50%);
+        border-radius: 50%;
+    }
+
+    /*******************************unıversıty resonsive*******************************************/
+    .about-university {
+        grid-template-columns: 25rem 0.4fr 25rem;
+        padding: 0rem 4.4rem 0rem 0.4rem;
+        margin: 36px 24px;
+
+    }
+
+    table {
+        width: 235px;
+        margin: 0 auto;
+    }
+  .demarage {
+        position: fixed;
+        top: 11.9%;
+        left: -3%;
+    
+     
+        
+    }
+
+
+
+}
+
+/***********************************unıversıty  1302px=81********************************/
+@media(max-width:81em) {
+
+    .section-uni-video {
+        display: grid;
+        gap: 1.2rem;
+        justify-content: center;
+
+    }
+
+    .right--video {
+        flex: 1;
+
+    }
+
+    .left--video {
+        flex: 1;
+
+    }
+
+    .left--video p {
+        margin-top: 1.8rem;
+        margin-left: 9.2rem;
+        display: none;
+    }
+
+    .univ-logos-left {
+        margin-left: 22.5rem;
+        width: 17rem;
+        text-align: center;
+        z-index: 3;
+    }
+
+    .about-university {
+        display: flex;
+        flex-direction: column;
+        height: 99rem;
+
+        align-items: center;
+        border: 1px solid gainsboro;
+        border-bottom: none;
+
+    }
+
+
+    .left1 {
+        /* background-color: rgb(176, 61, 126)*/
+
+        overflow-y: scroll;
+        max-width: 72.1rem;
+        height: 30rem;
+        order: 2;
+        border: 1px solid gainsboro;
+
+    }
+
+    .center1 {
+
+        border: 2px solid gainsboro;
+
+        overflow-y: scroll;
+        max-width: 99rem;
+        height: 40rem;
+        order: 1;
+        margin-top: 1rem;
+
+
+    }
+
+    .table-view {
+        width: 600px;
+    }
+
+    .text-center {
+        margin: 0px 15px;
+        width: 687px;
+    }
+
+    .right1 {
+
+        overflow-y: scroll;
+        max-width: 80rem;
+        height: 25rem;
+        order: 3;
+        padding: 0 5px;
+        border: 1px solid gainsboro;
+
+    }
+
+    table {
+        width: 689px;
+        margin: 0 auto;
+    }
+
+    .video-about {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+
+
+}
+
+/******-************************************************************************
+
+1213px=76px
+********/
+@media(max-width:76em) {
+    .header {
+        padding: 0px 5.5rem;
+
+
+
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        border: none;
+        cursor: pointer;
+
+        padding: 0.8rem 1.6rem;
+        border-radius: 50px;
+
+    }
+
+    .Section-hero {
+        padding: 18.5rem 23.5rem 8.5rem 8.5rem;
+        margin-top: 9.5rem;
+        margin-bottom: 5.5rem;
+
+
+
+    }
+
+    .illustration {
+
+        top: 60%;
+        left: 90%;
+
+    }
+
+    .tag--list {
+        gap: 1.2rem;
+        padding: 1rem;
+    }
+
+    .left-info span {
+        font-size: 1.4rem;
+    }
+
+    .left-paragraphe {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .hero-img-box::before,
+    .hero-img-box::after {
+        content: " ";
+        width: 40%;
+
+
+        /* height: 60%; */
+        /* 60% of the parent width*/
+        padding-bottom: 40%;
+
+
+    }
+
+    .hero-img-box::after {
+        width: 30%;
+        padding-bottom: 30%;
+
+    }
+ 
+}
+
+/******-*****************************landscale tablets*******************************************
+
+1200px=76px
+********/
+@media(max-width:75em) {
+    .header {
+        padding: 0px 3.2rem;
+
+
+    }
+
+    .social-links {
+
+        margin-left: 4rem;
+
+    }
+
+    .copyright {
+
+        margin-left: 4rem;
+    }
+
+
+    .Section-hero {
+        padding: 12.5rem 25.5rem 20rem 1.5rem;
+        margin-top: 9.5rem;
+        margin-bottom: 5.5rem;
+
+
+    }
+
+    .illustration {
+
+        top: 85%;
+        left: 90%;
+
+    }
+
+    .img1 {
+
+        width: 21%;
+        display: block;
+        padding-bottom: 21%;
+
+
+
+
+        top: -6%;
+        right: -20%;
+        transform: translateY(-50%, -50%);
+        border-radius: 50%;
+    }
+
+    .heading-primary {
+
+        font-size: 2.4rem;
+        padding-top: 1.2rem;
+        z-index: 5;
+    }
+
+    .heading-discription {
+        font-size: 1.8rem;
+        line-break: 1.01;
+        letter-spacing: 1px;
+    }
+
+    .left-info span {
+        font-size: 1.6rem;
+    }
+
+    .p--second {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .left-paragraphe {
+        width: 480px;
+    }
+
+    .section--video left-about,
+    .section--video video {
+
+
+        padding: 0 6.5rem;
+    }
+    .left--video p {
+        margin-top: 1.8rem;
+        margin-left: 9.2rem;
+        display: none;
+    }
+  .demarage {
+        position: fixed;
+        top: 14%;
+        left: -3%;
+    
+     
+        
+    }
+}
+
+/***
+1184=74em*/
+@media(max-width:74em) {
+     .demarage {
+        position: fixed;
+        top: 12.2%;
+        left: -3%;
+    
+     
+        
+    }
+    .header {
+        padding: 0px 1.2rem;
+        gap: 1rem;
+        justify-content: space-around;
+
+
+    }
+
+    .logo {
+        height: 9.7rem;
+    }
+
+    .main-nav-list {
+
+        gap: 1.6rem;
+    }
+
+
+
+    .logo1 {
+
+        height: 9.3rem;
+        margin-left: 4rem;
+    }
+
+    .btn-login {
+        font-size: 1.4rem;
+
+
+        padding: 0.9rem 1.8rem;
+    }
+
+    .social-links {
+
+        margin-left: 4rem;
+
+    }
+
+    .copyright {
+
+        margin-left: 4rem;
+    }
+
+    .btn:link,
+    .btn:visited {
+
+        margin-bottom: 3.2rem;
+        font-size: 1.6rem;
+        padding: 0.8rem 1.6rem;
+
+        color: #fc8d33;
+
+
+    }
+
+    .Section-hero {
+        padding: 18.5rem 13.5rem 8.5rem 2.5rem;
+        margin-top: 9.5rem;
+        margin-bottom: 5.5rem;
+
+
+
+    }
+
+    .left-info span {
+        font-size: 1.6rem;
+    }
+
+    .query {
+        width: 17rem;
+    }
+
+    .img1 {
+
+        width: 17%;
+        display: block;
+        padding-bottom: 17%;
+
+
+
+
+        top: -2%;
+        right: -10%;
+        transform: translateY(-50%, -50%);
+        border-radius: 50%;
+    }
+
+    .illustration {
+
+        top: 60%;
+        left: 90%;
+
+    }
+
+    .hero-img {
+        width: 135%;
+    }
+
+    .btnMedia {
+        padding: 0.8rem 1.6rem;
+        margin-left: -5rem;
+    }
+
+    .mediaSize1 {
+        top: 6%;
+        left: -10%;
+        width: 23rem;
+
+    }
+
+    .mediaSize:before {
+        content: "";
+        width: 40%;
+        display: block;
+        padding-bottom: 40%;
+        background-color: #fdae69;
+        position: absolute;
+        top: 30%;
+        left: -0.11%;
+        transform: translateX(-50%, -50%);
+        border-radius: 50%;
+    }
+
+
+    .section--video {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr 0.fr;
+    }
+
+    .card {
+        padding: 5.5rem 5.5rem;
+    }
+
+    .position {
+        grid-template-columns: 28rem 28rem;
+        justify-content: center;
+    }
+
+    .left-paragraphe {
+        width: 800px;
+    }
+
+    .video--iframe {
+        border: none;
+        width: 100%;
+        margin: auto;
+        height: 398px;
+    }
+
+    .heading-discription {
+        font-size: 1.4rem;
+    }
+
+    .card .info {
+
+        left: -39px;
+
+    }
+
+    .P--before {
+
+        font-size: 1.2rem;
+
+    }
+
+}
+
+/***************************************************Unıversite**************************************************/
+@media(max-width:69em) {
+     .demarage {
+        position: fixed;
+        top: 12%;
+        left: -3%;
+    
+     
+        
+    }
+
+    .section-uni-video {
+        display: flex;
+        gap: 1.2rem;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+    }
+
+    .right--video {
+
+        flex: 1;
+    }
+
+    .left--video {
+        flex: 1;
+
+    }
+
+    .about-university {
+        display: flex;
+        flex-direction: column;
+        height: 99rem;
+
+        align-items: center;
+        border: 1px solid gainsboro;
+        border-bottom: none;
+
+    }
+
+
+    .left1 {
+        /* background-color: rgb(176, 61, 126)*/
+
+        overflow-y: scroll;
+        max-width: 72.1rem;
+        height: 30rem;
+        order: 2;
+        border: 1px solid gainsboro;
+
+    }
+
+    .center1 {
+
+        border: 2px solid gainsboro;
+
+        overflow-y: scroll;
+        max-width: 99rem;
+        height: 40rem;
+        order: 1;
+        margin-top: 1rem;
+
+
+    }
+
+    .table-view {
+        width: 600px;
+    }
+
+    .text-center {
+        margin: 0px 15px;
+        width: 687px;
+    }
+
+    .right1 {
+
+        overflow-y: scroll;
+        max-width: 80rem;
+        height: 25rem;
+        order: 3;
+        padding: 0 5px;
+        border: 1px solid gainsboro;
+
+    }
+
+    table {
+        width: 689px;
+        margin: 0 auto;
+    }
+
+    .video-about {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .demarage p{
+        font-size: 1.4rem;
+    }
+}
+
+/********************************************************table***********************
+944px=61em
+*/
+@media(max-width:59em) {
+    .html {
+        font-size: 9px;
+    }
+    .image-ciu {
+    width: 43%;
+    position: absolute;
+    top: 27%;
+    left: 55%;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    padding: 0.8rem 8rem;
+    transform: rotate(0deg);
+    z-index: 444;
+    border-top-left-radius: 190rem;
+    border-top-right-radius: 190rem;
+    border-bottom-right-radius: 190rem;
+    border-bottom-left-radius: 190rem;
+    border-bottom-right-radius: 190rem;
+    text-align: center;
+    z-index: 100444;
+}
+.image-ciu {
+    width: 45%;
+    position: absolute;
+    top: 31%;
+    left: 55%;
+    
+    
+}
+
+
+
+     /* .demarage {
+        position: fixed;
+        top: 9%;
+        left: -3%;
+     height: 8rem;
+     
+        
+    }*/
+   
+.demarage p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+    .choice-programme ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        font-weight: 700;
+        cursor: pointer;
+        padding: 0.8rem 1.6rem;
+    }
+
+
+    .about-university {
+        padding: 0rem 0.4rem 0rem 0.4rem;
+        margin: 36px 24px;
+        display: flex;
+        flex-direction: column;
+        height: 99rem;
+
+        align-items: center;
+        border: 1px solid gainsboro;
+        border-bottom: none;
+
+    }
+
+
+    .left1 {
+        /* background-color: rgb(176, 61, 126)*/
+
+        overflow-y: scroll;
+        width: 62rem;
+        height: 30rem;
+        order: 2;
+        border: 1px solid gainsboro;
+
+    }
+
+    .center1 {
+
+        border: 2px solid gainsboro;
+
+        overflow-y: scroll;
+        max-width: 66rem;
+        height: 40rem;
+        order: 1;
+        margin-top: 1rem;
+
+
+    }
+
+    .table-view {
+        width: 600px;
+    }
+
+    .text-center {
+        margin: 0px 15px;
+        width: 587px;
+    }
+
+    .right1 {
+
+        overflow-y: scroll;
+        width: 62rem;
+        height: 25rem;
+        order: 3;
+        padding: 0 5px;
+        border: 1px solid gainsboro;
+
+    }
+
+    table {
+        width: 547px;
+        margin: 0 auto;
+    }
+
+    .video-about {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+
+    .btn-mobile-nav {
+        display: flex;
+    }
+
+    .Section-hero {
+        padding: 7.5rem 0.5rem 16.5rem 0.5rem;
+        margin-top: 7.5rem;
+        margin-bottom: -5.5rem;
+        background-color: rgb(255, 234, 222);
+    }
+
+    .hero {
+        gap: 1px;
+        padding: 0 8rem;
+
+    }
+
+    .header {
+        padding: 0px 10.2rem;
+        gap: 3.2rem;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .logo {
+        height: 8.7rem;
+    }
+
+    .main-nav-list {
+
+        gap: 1.6rem;
+    }
+
+    .hero {
+        display: flex;
+
+        flex-direction: column;
+        background-color: rgb(255, 234, 222);
+
+    }
+
+    .illustra--img {
+        position: absolute;
+        top: -20%;
+        right: -5%;
+        width: 30rem;
+        transform: translateY(-50%, -50%);
+
+        border-radius: 100%;
+    }
+
+    .illustra--img::before {
+        content: "";
+        width: 50%;
+        display: none;
+        padding-bottom: 50%;
+        background-color: #fdae69;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        transform: translateX(-50%, -50%);
+        border-radius: 50%;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    .img1 {
+
+        display: none;
+
+    }
+
+    .img--over {
+        display: none;
+
+    }
+
+    .mediaSize1 {
+        display: none;
+    }
+
+    .hero-img {
+        width: 85%;
+    }
+
+    .hero-img-box::before,
+    .hero-img-box::after {
+        content: " ";
+        width: 75%;
+        display: block;
+
+        /* height: 60%; */
+        /* 60% of the parent width*/
+        padding-bottom: 75%;
+        background-color: #facdab;
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-top-right-radius: 100rem;
+        border-bottom-left-radius: 100rem;
+        z-index: -2;
+    }
+
+    .hero-img-box::after {
+        width: 65%;
+        padding-bottom: 65%;
+        background-color: #fae5b3;
+        background-color: #eaf4faad;
+        z-index: -1;
+    }
+
+    .hero-text-box {
+        order: 1;
+        flex: 3;
+
+        margin-bottom: 3.2rem;
+
+    }
+
+    .hero-img-box {
+        align-items: center;
+        justify-content: center;
+        order: 2;
+
+
+
+
+    }
+
+    .heading-primary {
+        text-align: center;
+        font-size: 4.4rem;
+
+
+    }
+
+    .btnMedia {
+        position: absolute;
+        top: 40%;
+        right: 25%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    .wrapper {
+        grid-template-columns: 2fr;
+    }
+
+    .left-paragraphe {
+
+        width: 600px;
+    }
+
+    .sign--header {
+        display: none;
+
+    }
+
+    .sign {
+        display: block;
+
+    }
+
+
+    /*.hero::after{
+            content: "Log in";
+            color: rgb(247, 247, 247);
+            background-color: rgb(13, 104, 241);
+             width: 10%;
+              display: block;
+              padding: 1% 1.2rem 1% 1.2rem;
+              position: absolute;
+              top: 40% ;
+              left: 40%;
+             transform: translate(-50%, -50%);
+             font-size: 1.8rem;
+             text-align: center;
+           border-radius: 25px;
+           cursor: pointer;
+      
+    
+      z-index: 72;
+        }
+        *****************************Mobile navigation**************************/
+
+    .main-nav {
+        background-color: white;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: 9999;
+
+
+    }
+
+    #nav--open .main-nav {
+
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+
+
+    }
+
+    #nav--open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    #nav--open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+    .mobile-Display {
+        display: block;
+    }
+
+    .mobile-Display1 {
+        display: none;
+    }
+
+    .main-nav-list li:hover .div-sub ul {
+
+        display: none;
+        background: none;
+    }
+
+    .main-nav-list li:hover .div-sub {
+
+        display: none;
+
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .main-nav-link {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
+    .main-nav-list .mobile-Display14 {
+        display: none;
+    }
+
+    .main-nav-link {
+        display: inline-block;
+        padding: 0.7rem 0.7rem 0.7rem 1rem;
+        padding: -2px 1rem;
+        margin: .1rem 0;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+
+    header .accordion-item-header {
+        padding: -1.3rem 0.7rem 1.7rem 1rem;
+        min-height: 3.5rem;
+        line-height: 1.25rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hero .sign {
+        display: flex;
+        justify-content: center;
+        margin: 0 4rem;
+
+
+    }
+
+    .sign .btn-login {
+        margin-top: 1.6rem;
+        margin-bottom: 0;
+        padding: 1.2rem 3.2rem;
+    }
+
+    .sign .left {
+        color: #fc8d33;
+    }
+
+    .btn:link,
+    .btn:visited {
+
+        color: #fc8d33;
+        display: none;
+    }
+    .card .info   .btn{
+        display: block;
+    }
+
+    .card {
+        padding: 15.5rem 7.5rem;
+    }
+
+
+
+    .info h1 {
+        font-size: 3.2rem;
+        letter-spacing: 1px;
+        line-height: 1.06;
+    }
+
+    .info P {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        line-height: 1.06;
+    }
+
+    .card .info {
+        top: 13rem;
+        left: -58px;
+
+    }
+
+
+    .hero .sign {
+
+        display: flex;
+        justify-content: center;
+        margin: 0 5rem;
+
+
+    }
+
+    .heading-let {
+        font-size: 3.4rem;
+
+    }
+
+    .section-uni-video {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+
+    }
+
+    .right--video {
+
+        display: none;
+    }
+
+    .left--video {
+
+        margin-bottom: 1rem;
+
+    }
+
+    .univ-logos-left {
+        margin-left: 9rem;
+        width: 11rem;
+        text-align: center;
+        z-index: 3;
+    }
+}
+
+/**************************** Small tablets*************************
+    734px=44em
+    */
+@media(max-width:45em) {
+    
+.image-ciu {
+    width: 41%;
+    top: 83%;
+    left: -9%;
+}
+    .demarage{
+        height: 10rem;
+       }
+   .demarage p{
+       font-size: 1rem;
+       font-weight: 700;
+   }
+
+    .about-university {
+        padding: 0rem 0.4rem 0rem 0.4rem;
+        margin: 36px 24px;
+        display: flex;
+        flex-direction: column;
+        height: 99rem;
+
+        align-items: center;
+        border: 1px solid gainsboro;
+        border-bottom: none;
+
+    }
+
+
+    .left1 {
+        /* background-color: rgb(176, 61, 126)*/
+
+        overflow-y: scroll;
+        max-width: 55rem;
+        height: 30rem;
+        order: 2;
+        border: 1px solid gainsboro;
+
+    }
+
+    .center1 {
+
+        border: 2px solid gainsboro;
+
+        overflow-y: scroll;
+        max-width: 55rem;
+        height: 40rem;
+        order: 1;
+        margin-top: 1rem;
+
+
+    }
+
+    .table-view {
+        width: 491px;
+    }
+
+    .text-center {
+        margin: 0px 15px;
+        width: 516px;
+    }
+
+    .right1 {
+
+        overflow-y: scroll;
+        width: 55rem;
+        height: 25rem;
+        order: 3;
+        padding: 0 5px;
+        border: 1px solid gainsboro;
+
+    }
+
+    .choice-programme ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        padding: 0.6rem 1.2rem;
+    }
+    
+}
+
+/**************************** Small tablets*************************
+    704px=44em
+    */
+@media(max-width:44em) {
+     .demarage{
+        top:8.9rem ;
+        height: 10rem;
+       }
+  .image-ciu {
+    width: 51%;
+    top: 80%;
+    left: -16%;
+
+}
+   .demarage p{
+       font-size: 1.2rem;
+       font-weight: 700;
+   }
+
+    .SIZE-Logos-Uni {
+        width: 260px;
+      }
+
+    .about-university {
+        padding: 0rem 0.4rem 0rem 0.4rem;
+        margin: 36px 24px;
+        display: flex;
+        flex-direction: column;
+        height: 99rem;
+
+        align-items: center;
+        border: 1px solid gainsboro;
+        border-bottom: none;
+
+    }
+
+
+    .left1 {
+        /* background-color: rgb(176, 61, 126)*/
+
+        overflow-y: scroll;
+        max-width: 40rem;
+        height: 30rem;
+        order: 2;
+        border: 1px solid gainsboro;
+
+    }
+
+    .center1 {
+
+        border: 2px solid gainsboro;
+
+        overflow-y: scroll;
+        max-width: 40rem;
+        height: 40rem;
+        order: 1;
+        margin-top: 1rem;
+
+
+    }
+
+    .table-view {
+        width: 358px;
+    }
+
+    .text-center {
+        margin: 0px 15px;
+        width: 358px;
+    }
+
+    .right1 {
+
+        overflow-y: scroll;
+        width: 40rem;
+        height: 25rem;
+        order: 3;
+        padding: 0 5px;
+        border: 1px solid gainsboro;
+
+    }
+
+
+    .section-card {
+        max-width: 130rem;
+        padding: 0rem 1rem 8rem 1rem;
+    }
+
+    .hero-img {
+        width: 75%;
+
+        position: absolute;
+        top: 45%;
+        left: 15%;
+    }
+
+    .hero-text-box {
+        z-index: 41;
+
+    }
+
+    .header {
+        padding: 0px 1.2rem;
+    }
+
+    .card {
+        padding: 7.5rem 7.5rem;
+    }
+
+    .info h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        line-height: 1.06;
+    }
+
+    .info P {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        line-height: 1.06;
+    }
+
+    .card .info {
+        top: 2rem;
+        left: -58px;
+
+    }
+
+    .grid--footer {
+        grid-template-columns: repeat(6, 1fr);
+
+        justify-content: center;
+        margin-left: 6.5rem;
+        row-gap: 1rem;
+
+    }
+
+    .nav-col {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+
+    }
+
+    .logo-col,
+    .address-col {
+        grid-column: span 3;
+    }
+
+    .logo1 {
+
+        height: 9.3rem;
+        margin-left: 4rem;
+    }
+
+    .social-links {
+
+        margin-left: 1rem;
+
+    }
+
+    .copyright {
+
+        margin-left: 1rem;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        display: block;
+        margin-bottom: 0.2rem;
+
+    }
+
+
+    .btn:link,
+    .btn:visited {
+
+        color: #fc8d33;
+        display: none;
+    }
+    .card .info   .btn{
+        display: block;
+    }
+
+    .hero .sign {
+
+        display: flex;
+        flex-direction: column;
+        margin: 0 5rem;
+        gap: 1.1rem;
+
+
+    }
+
+    .sign .btn-login {
+        text-align: center;
+        display: block;
+        font-size: 1.rem;
+        margin-bottom: 0;
+        padding: 1.2rem 3.2rem;
+
+    }
+
+
+    .sign .left {
+        color: #fc8d33;
+        margin-top: -0.11rem;
+    }
+
+    .left-paragraphe {
+        width: 300px;
+    }
+
+    .left-paragraphe p {
+        font-size: 1.3rem;
+        letter-spacing: 4;
+        line-height: 2.01;
+    }
+
+    .position {
+        grid-template-columns: 0.9fr;
+    }
+
+    .heading-discription {
+        text-align: center;
+    }
+
+    .heading-primary {
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+    .hero-img-box::before,
+    .hero-img-box::after {
+        content: " ";
+        width: 75%;
+        display: block;
+
+        /* height: 60%; */
+        /* 60% of the parent width*/
+        padding-bottom: 75%;
+        background-color: #facdab;
+        position: absolute;
+        top: 69%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-top-right-radius: 100rem;
+        border-bottom-left-radius: 100rem;
+        z-index: -2;
+    }
+
+
+}
+
+/*** screen size
+ 430px=27em
+ ****/
+@media(max-width:27em) {
+     .demarage{
+        height: 10rem;
+       }
+ 
+
+.image-ciu {
+    width: 76%;
+    top: 79%;
+    left: -24%;
+}
+
+   .demarage p{
+       font-size: 1rem;
+       font-weight: 700;
+   }
+
+
+    .hero-img {
+        width: 105%;
+
+        position: absolute;
+        top: 45%;
+        left: 5%;
+    }
+
+    .hero-discription {
+
+        display: none;
+    }
+
+    .left-paragraphe {
+        width: 250px;
+    }
+
+    .sign .btn-login {
+
+        padding: 0.2rem 4.2rem;
+    }
+
+
+
+    .grid--footer {
+        column-gap: 6rem;
+        margin-left: 1.5rem;
+    }
+
+    .footer-heading {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    /***********************************************unıversite  responsıve******************************************************/
+    .about-university {
+        padding: 0rem 0.4rem 0rem 0.4rem;
+        margin: 36px 24px;
+        display: flex;
+        flex-direction: column;
+        height: 99rem;
+
+        align-items: center;
+        border: 1px solid gainsboro;
+        border-bottom: none;
+
+    }      
+
+    .left--video-text h1 {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .left--video p {
+        margin-top: 0.8rem;
+        margin-left: 5.2rem;
+        font-size: 1.6rem;
+        padding: 3rem 6rem;
+    }
+
+
+    .left1 {
+        /* background-color: rgb(176, 61, 126)*/
+
+        overflow-y: scroll;
+        max-width: 30rem;
+        height: 30rem;
+        order: 2;
+        border: 1px solid gainsboro;
+
+    }
+
+    .center1 {
+
+        border: 2px solid gainsboro;
+
+        overflow-y: scroll;
+        max-width: 30rem;
+        height: 40rem;
+        order: 1;
+        margin-top: 1rem;
+
+
+    }
+
+    .table-view {
+        width: 358px;
+        margin-left: 3rem;
+        overflow: hidden;
+    }
+
+    .table-view thead th {
+        width: 32%;
+    }
+
+    .text-center {
+        margin: 0px 15px;
+        width: 244px;
+    }
+
+    .right1 {
+
+        overflow-y: scroll;
+        width: 30rem;
+        height: 25rem;
+        order: 3;
+        padding: 0 5px;
+        border: 1px solid gainsboro;
+
+    }
+
+    table {
+        width: 246px;
+        margin: 0 auto;
+    }
+
+    .table-view tr,
+    .table-view th {
+        padding: 0.8rem 1.6rem;
+    }
+
+    .p--second {
+
+        line-height: 1;
+
+    }
+    .left--video p {
+        margin-top: 1.8rem;
+        margin-left: 9.2rem;
+        display: block;
+    }
+}
+/*****320******/
+@media(max-width:20em) {
+    
+       
+
+.image-ciu {
+    width: 1%;
+    top: 84%;
+    left: -23%;
+}
+}
