@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+.section--university {
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 232, 197);
+  background-color: rgb(255, 203, 124);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 120rem;
+  gap: 2rem;
+  row-gap: 4rem;
+
+  margin: 0 auto;
+}
+.card {
+  padding: 4.6rem;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+}
+.img-div-card {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+}
+.card-Univ-img {
+  width: 100%;
+}
+.card:hover {
+  transform: translateY(20px);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+ 
+  background: linear-gradient(
+    to bottom,
+    rgb(193 152 24  0%),
+    rgb(183 142 40)
+  );
+
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 1;
+}
+
+.card:hover:before {
+  opacity: 2;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 1;
+  left: -15px;
+  bottom: -45px;
+
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+.btn-info{
+  text-decoration: none;
+  color: #fff;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.card.info h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 5.5rem;
+}
+/*.card.info p{
+    letter-spacing: 1px;
+    font-size: 2.4rem;
+    margin-top: 8px;
+    margin-bottom: 700px;
+                   
+      }*/
+
+      .P--before {
+        margin-top: 0.1rem;
+        font-size: 1.6rem;
+        margin-bottom: 0.2rem;
+        letter-spacing: 1px;
+    }
+    .info h1{
+      margin: 1rem 0;
+    }
+
+.card .info .btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.card .info .btn:hover {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
