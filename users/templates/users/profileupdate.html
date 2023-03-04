@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<div class="content-section">
+  <div class="media">
+    <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
+    <div class="media-body">
+      <h2 class="account-heading">{{ user.username }}</h2>
+      <p class="text-secondary">{{ user.email }}</p>
+    
+    </div>
+  </div>
+  <div class="form-group">
+      <button class="btn btn-outline-info"><a href="{% url 'profile' %}">
+        Mise à jour</a></button>
+      
+    <a class="nav-item nav-link" href="{% url 'change_password'%}">Changer Votre Mot de pass</a>
+      
+      
+  </div>
+{% endblock content %}
+ 

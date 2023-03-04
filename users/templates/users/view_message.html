@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<h1>{{ message.subject }}</h1>
+<p>From: {{ message.sender }}</p>
+<p>To: {{ message.recipient }}</p>
+<p>Date Sent: {{ message.date_sent }}</p>
+
+{% if message.file_upload %}
+<p>File Attachment: <a href="{{ message.file_upload.url }}" download>{{ message.file_upload.name }}</a></p>
+{% endif %}
+
+<p>{{ message.body }}</p>
+
+{% endblock %}
+ 

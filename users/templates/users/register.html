@@ -1,0 +1,42 @@
+
+{% extends "blog/base.html" %}
+
+{% block content %}
+
+
+    <div class="content-section">
+
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Vous êtes à un autre pas de créer votre futur</legend>
+                {{ form.as_p}}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">S'enregistre</button>
+            </div>
+        </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                j'ai deja un compte? <a class="ml-2" href="{%url 'login'%}">S'enregistre</a>
+            </small>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    
+    
+    .content-section{
+        background-color: rgba(253, 253, 253, 0.575);
+    }
+    .form-group p{
+      display: flex;
+      flex-direction:column ;
+      background-color: rgba(240, 248, 255, 0);
+    }
+    .helptext{
+        display: none;
+    }
+</style>
+{% endblock content %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Messages with {{ receiver.username }}</h2>
+  <ul>
+  {% for message in messages %}
+    <li>{{ message.content }}</li>
+    {% if message.image %}
+      <img src="{{ message.image.url }}" alt="message image">
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endblock %}

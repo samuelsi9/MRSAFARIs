@@ -1,0 +1,161 @@
+<!-- inbox.html -->
+
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    
+   
+        <!--
+            {% for message in messages %}
+            <div>
+                <span>
+                    <p> {{ message.sender }}</p>               
+                    <p> {{ message.date_sent }}</p>
+                </span>
+                 
+                    <a href="{% url 'view_message' message.id %}"> <textarea>{{ message.subject }}</textarea></a>
+                
+
+            </div>
+               
+                
+                    {% if message.file_upload %}
+                    <a href="{{ message.file_upload.url }}" download>{{ message.file_upload.name }}</a>
+                    {% else %}
+                    None
+                    {% endif %}
+                
+            
+            {% endfor %}
+            -->
+            <div class="chat-container">
+                {% for message in messages %}
+                <div class="message {% if message.sender == current_user %}sent{% else %}received{% endif %}">
+                    <div class="message-header">
+                        <span class="message-sender">{{ message.sender }}</span>
+                        <span class="message-date">{{ message.date_sent }}</span>
+                    </div>
+                    <div class="message-content">
+                        <a href="{% url 'view_message' message.id %}">
+                            <textarea readonly>{{ message.subject }}</textarea>
+                        </a>
+                        {% if message.file_upload %}
+                        <div class="message-file">
+                            
+                            <a href="{{ message.file_upload.url }}" download><h3>Telecharger Le Fichier</h3></a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+    
+    <style>
+       .col-md-8{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+       }
+       .alert {
+    position: relative;
+    padding: 0.75rem 0.15rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    background-color: #007bff;
+    color: wheat;
+}
+      .chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.message.sent {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+}
+
+.message.received {
+  align-self: flex-start;
+  background-color: white;
+  color: #444;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.message-sender {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.message-date {
+  font-size: 12px;
+  color: #666;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: inherit;
+  resize: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.message-file {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.message-file a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.message-file a:hover {
+  color: #007bff;
+}
+
+      
+
+    </style>
+{% endblock %}
