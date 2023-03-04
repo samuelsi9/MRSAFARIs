@@ -1,0 +1,278 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'Css/style.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/ca.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/styleadmin.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/university.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/Query.css'%}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <title>service</title>
+  <style>
+       .left {
+  background-color: rgb(255, 94, 0);
+  color: #fdf9f8;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+  </style>
+</head>
+
+<body>
+
+
+  <!--header -->
+  <!--header -->
+ <!--header -->
+<header class=" header">
+  <img class="logo" src="{%static 'image/newLogos1.png'%}" alt="logo">
+  <nav class=" main-nav">
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link" href="{% url 'HOMES'%}">Accueil</a></li>
+      <li>
+        <a class="main-nav-link" href="{% url 'admissionP'%}">Admission</a>
+
+      </li>
+      <li>
+        <div class="mobile-Display accordion-item">
+            <div class="accordion-item-header">
+              <a class="list-ex" href="">Universites</a>
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <ul class="accord-list">
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+    
+                </ul>
+              </div>
+            </div>
+         
+        </div>
+      </li>
+      <li class="mobile-Display14" >
+        <a id="mobile-Display1" class="  main-nav-link" href="">Universites</a>
+        <div class="mobile-Display1 div-sub">
+          <ion-icon class="icon-drop-down" name="caret-up-sharp"></ion-icon>
+          <ul class="mobile-Display1">
+            <li> <a class="effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+
+          </ul>
+          
+        </div>
+        
+           
+      </li>
+      <li><a class="main-nav-link" href="{% url 'services'%}"> Services</a></li>
+      <li><a class="main-nav-link" href="{% url 'chypre'%}"> Chypre </a></li>
+      <li class="mobile-Display">
+       
+       
+         
+      </li>
+    </ul>
+
+  </nav>
+
+  <div class=" sign--header">
+    
+    <a class=" P-btn right btn-login " href="{%url 'login'%}">Se connecter</a>
+    <a class=" P-btn left btn-login   " href="{%url 'register'%}">Postiler</a>
+    
+
+  </div>
+  <button class="btn-mobile-nav">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+  </button>
+
+</header>
+<!--emd header-->
+  <!--emd header-->
+  <!-- Section Main  -->
+
+  <main class="chypre-margin">
+    <!--     ***********************************Section************************************************* -->
+
+    <section class=" section--video">
+
+      <div class="left-about">
+
+        <img width="100%" height="100%" src="{%static 'image/traveler.jpg'%}" alt="picture of a traveler">
+
+
+      </div>
+      </div>
+      <div class="video">
+
+
+
+
+
+        <h1 class="left-heading">Safari Travel </h1>
+        <br>
+        <br>
+        <div class="left-paragraphe">
+          <p class="left-paragraphe-univ">
+            Chez Safari Travel, nous sommes fiers d'offrir des services complets
+            pour aider nos clients à explorer le monde ou à faire des démarches pour étudier à l'étranger.
+            Nous sommes conscients que chaque voyageur ou étudiant a des attentes
+            uniques, c'est pourquoi nous travaillons dur pour répondre à leurs besoins spécifiques.</P>
+
+          <P class=" leftP left-paragraphe-univ">
+            Nos services de voyage comprennent la planification de voyages sur mesure pour
+            aider nos clients à atteindre leur destination de rêve. Nous proposons une
+            variété de destinations de voyage telles </p>
+          <p>que le Canada, la France, l'Afrique du Sud, la Turquie,
+            la Tunisie, le Maroc, le Kenya et bien plus encore. Nous sommes spécialisés
+            dans la planification de voyages sur mesure, adaptés à vos besoins et à votre budget.</p>
+
+
+        </div>
+
+
+  </main>
+  <section class="section-sliter-testimonial">
+
+    <div class="testimonial-section">
+      <div class="testimonial-slider">
+
+        <div class="testimonial">
+          <img src="{% static 'image/france (2).jpeg'%}" alt="Client 2">
+
+        </div>
+        <div class="testimonial">
+          <img src="{%static 'image/canada.jpeg'%}" alt="Client 2">
+
+        </div>
+        <div class="testimonial">
+          <img src="{%static 'image/brazil.jpeg'%}" alt="Client 2">
+
+        </div>
+        <div class="testimonial">
+          <img src="{static 'image/turquıe.jpeg'%}" alt="Client 2">
+
+        </div>
+        <div class="testimonial">
+          <img src="{%static 'image/cuba.jpeg'%}" alt="Client 2">
+
+        </div>
+        <div class="testimonial">
+          <img src="{%static 'image/Russie.jpeg'%}" alt="Client 2">
+
+        </div>
+        <div class="testimonial">
+          <img src="{%static 'image/south africa.jpeg'%}" alt="Client 2">
+
+        </div>
+        <div class="testimonial">
+          <img src="{%static 'image/tunisıe.jpeg'%}" alt="Client 2">
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="grid--footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img class="logo1" alt="safari logo" src="{%static 'image/newLogos1.png'%}" />
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="https://instagram.com/safary_travel_?igshid=YmMyMTA2M2Y="
+              target="_blank"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.youtube.com/@safaritravel9538" target="_blank"><ion-icon
+                class="social-icon" name="logo-youtube"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#" target="_blank"><ion-icon class="social-icon"
+                name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; <span class="year">2023</span>-build by x-software, Inc.
+          All rights reserved.
+        </p>
+      </div>
+
+      <div class="address-col">
+        <p class="footer-heading">Address</p>
+        <address class="contacts">
+          <p class="address">
+            Chypre, Nicosias
+          </p>
+          <p>
+            <a class="footer-link" href="tel:  +905338245382"> 533 82 453 82</a><br />
+
+
+            <a class="footer-link" href="mailto:hello@omnifood.com"></a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">compte</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url ''}">Creer un compte</a></li>
+          <li><a class="footer-link" href="{% url' '}"> Postiler</a></li>
+          <li><a class="footer-link" href="#">iOS app</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Agence</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'admissionP'%}">Admission</a></li>
+          <li><a class="footer-link" href="{% url 'services'%}">Services</a></li>
+          <li><a class="footer-link" href="{% url 'register'%}">s'enregistre</a></li>
+          <li><a class="footer-link" href="{% url 'chypre'%}">Chypre</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Universites</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'ciu'%}">Cypris internationale university </a></li>
+          <li><a class="footer-link" href="{% url 'neu'%}">Near east University</a></li>
+          <li><a class="footer-link" href="{%url 'emu'%}">Eastern Mediteranean University</a></li>
+          <li><a class="footer-link" href="{% url 'bau'%}">Bahçeşehir Cyprus University</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </footer>   
+  <script src="{% static 'javascript/accordian.js'%}"></script>
+  <script src="{% static 'javascript/smooth.js'%}"></script>
+
+</body>
+
+</html>

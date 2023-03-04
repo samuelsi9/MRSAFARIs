@@ -1,0 +1,430 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'Css/style.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/ca.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/styleadmin.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/university.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/Query.css'%}">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>undergraceGau</title>
+  <style>
+    .section-uni-video {
+  background: url('/static/image/Background5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.left {
+  background-color: rgb(255, 94, 0);
+  color: #fdf9f8;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+   
+  </style>
+</head>
+
+<body>
+  <!--header -->
+<!--header -->
+<header class=" header">
+  <img class="logo" src="{%static 'image/newLogos1.png'%}" alt="logo">
+  <nav class=" main-nav">
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link" href="{% url 'HOMES'%}">Accueil</a></li>
+      <li>
+        <a class="main-nav-link" href="{% url 'admissionP'%}">Admission</a>
+
+      </li>
+      <li>
+        <div class="mobile-Display accordion-item">
+            <div class="accordion-item-header">
+              <a class="list-ex" href="">Universites</a>
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <ul class="accord-list">
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+    
+                </ul>
+              </div>
+            </div>
+         
+        </div>
+      </li>
+      <li class="mobile-Display14" >
+        <a id="mobile-Display1" class="  main-nav-link" href="">Universites</a>
+        <div class="mobile-Display1 div-sub">
+          <ion-icon class="icon-drop-down" name="caret-up-sharp"></ion-icon>
+          <ul class="mobile-Display1">
+            <li> <a class="effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+
+          </ul>
+          
+        </div>
+        
+           
+      </li>
+      <li><a class="main-nav-link" href="{% url 'services'%}"> Services</a></li>
+      <li><a class="main-nav-link" href="{% url 'chypre'%}"> Chypre </a></li>
+      <li class="mobile-Display">
+       
+       
+         
+      </li>
+    </ul>
+
+  </nav>
+
+  <div class=" sign--header">
+    
+    <a class=" P-btn right btn-login " href="{%url 'login'%}">Se connecter</a>
+    <a class=" P-btn left btn-login   " href="{%url 'register'%}">Postiler</a>
+    
+
+  </div>
+  <button class="btn-mobile-nav">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+  </button>
+
+</header>
+<!--emd header-->
+  <!--emd header-->
+  <!--emd header-->
+  <!-- Section Main  -->
+  <!-- Section Main  -->
+  <main>
+
+    <section class="section-uni-video"
+     >
+      <div class="right--video">
+        <img class="img-video" src="{%static 'image/graduate-students-wearing-cap-gown.jpg'%}" alt="">
+
+
+      </div>
+      <div class="left--video">
+        <div class="left--video-text">
+          <img class="univ-logos-left" src="{%static 'image/girne-american-university-.png'%}" alt="Client 2">
+          <h1> Girne America universty</h1>
+
+          <h2  class="facultés-program-h2">
+            Facultes et  Programmes premier cycle</h2>
+
+        </div>
+      </div>
+
+
+    </section>
+    <section class="about-programs">
+
+
+      <div class="choice-programme">
+        <ul class="choicce-list">
+          <li><a class="choice-li1" href="{%url 'undergau'%}">license </a></li>
+          <li><a href="{%url 'mastergau'%}"> Master </a></li>
+          <li><a href="">Doctorat </a></li>
+        </ul>
+      </div>
+      <div class="programs-div">
+        <h5 class=" apart program-faculte">Diplômes de niveau associé</h5>
+        <h5 class="program-faculte">Programmation informatique</h5>
+        <h5 class="program-faculte">Relations publiques et publicité</h5>
+        <h5 class="program-faculte">Premiers secours et premiers soins</h5>
+        <h5 class=" apart program-faculte">Faculté des sciences et technologies agricoles</h5>
+        <h5 class="  program-faculte">Production végétale et technologies (BSc)</h5>
+        <h5 class=" apart program-faculte">Faculté des sciences et des arts</h5>
+        <h5 class="program-faculte">Biologie moléculaire et génétique (BSc)</h5>
+        <h5 class="program-faculte">Psychologie (BA)</h5>
+        <h5 class=" apart program-faculte">Faculté de la communication</h5>
+        <h5 class="program-faculte">Publicité et relations publiques (BA)</h5>
+        <h5 class="program-faculte">Radio, télévision et cinéma (BA)</h5>
+        <h5 class="program-faculte">Journalisme (BA)</h5>
+        <h5 class="program-faculte">Design de la communication visuelle (BA)</h5>
+        <h5 class=" apart program-faculte">Faculté des sciences économiques et administratives</h5>
+        <h5 class="program-faculte">Comptabilité et finance (BSc)</h5>
+        <h5 class="program-faculte">Administration des affaires (BA)</h5>
+        <h5 class="program-faculte">Économie (BSc)</h5>
+        <h5 class="program-faculte">Relations internationales (BA)</h5>
+        <h5 class="program-faculte">Média numérique et marketing (BA)</h5>
+        <h5 class=" apart program-faculte">Faculté de l'éducation</h5>
+        <h5 class="program-faculte">Enseignement de la langue anglaise (BA)</h5>
+        <h5 class=" apart program-faculte">Faculté d'ingénierie</h5>
+        <h5 class="program-faculte">Ingénierie de l'intelligence artificielle (BSc)</h5>
+        <h5 class="program-faculte">Bioingénierie (BSc)</h5>
+        <h5 class="program-faculte">Génie biomédical (BSc)</h5>
+        <h5 class="program-faculte">Génie civil (BSc)</h5>
+        <h5 class="program-faculte">Génie informatique (BSc)</h5>
+        <h5 class="program-faculte">Génie électrique et électronique (BSc)/div>
+          <h5 class="program-faculte">Systèmes d'énergie en ingénierie (BSc)</h5>
+          <h5 class="program-faculte">Ingénierie environnementale (BSc)</h5>
+          <h5 class="program-faculte">Ingénierie industrielle (BSc)</h5>
+          <h5 class="program-faculte">Ingénierie des systèmes d'information (BSc)</h5>
+          <h5 class="program-faculte">Mécanique ingénierie (BSc)</h5>
+          <h5 class="program-faculte">Mécatronique ingénierie (BSc)</h5>
+          <h5 class="program-faculte">Ingénierie médicale (BSc)</h5>
+          <h5 class="program-faculte">Ingénierie logicielle (BSc)</h5>
+            <h5 class="program-faculte">Pétrole et gaz naturel ingénierie (BSc)</h5>
+            <h5 class=" apart program-faculte">Faculté des arts, du design et de l'architecture</h5>
+            <h5 class="program-faculte">Architecture (BA)</h5>
+            <h5 class="program-faculte">Design intérieur (BA)</h5>
+            <h5 class="program-faculte">Design graphique (BA)</h5>
+            <h5 class=" apart program-faculte">Faculté des sciences de la santé</h5>
+            <h5 class="program-faculte">Nutrition et diététique (BSc)</h5>
+            <h5 class="program-faculte">Soins infirmiers (BSc)</h5>
+            <h5 class="program-faculte">Travail social (BA)</h5>
+            <h5 class="program-faculte">Physiothérapie et réadaptation (BSc)</h5>
+            <h5 class=" apart program-faculte">Faculté de droit</h5>
+            <h5 class="program-faculte">Droit international (LLB)</h5>
+            <h5 class=" apart program-faculte">Faculté de médecine</h5>
+            <h5 class="program-faculte">Médecine (M.D)</h5>
+            <h5 class=" apart program-faculte">Faculté de dentisterie</h5>
+            <h5 class="program-faculte">Dentisterie (DDS)</h5>
+            <h5 class="  apart program-faculte">Faculté de pharmacie</h5>
+            <h5 class="program-faculte">Pharmacie (M. Pharm)</h5>
+            <h5 class="program-faculte">Pharmacie (Pharm D.)</h5>
+            <h5 class="  apart program-faculte">École des sciences appliquées</h5>
+            <h5 class="program-faculte">Science des données (BSc)</h5>
+            <h5 class="program-faculte">Technologies de l'information (BSc)</h5>
+            <h5 class="program-faculte">Technologies de la sécurité de l'information (BSc)</h5>
+            <h5 class="program-faculte">Systèmes d'information de gestion (BSc)</h5>
+            <h5 class=" apart program-faculte">École du tourisme et de la gestion hôtelière</h5>
+            <h5 class="program-faculte">Tourisme et gestion hôtelière (BA)</h5>
+            <h5 class="program-faculte">Gastronomie et arts culinaires (BA)</h5>
+
+      </div>
+
+
+    </section>
+  </main>
+
+  <!--   ************************** Section  Card  ******************************-->
+ 
+    <!--   ************************** Section  Card  ******************************-->
+    
+    <section class="section-card">
+      <!-- card layout-->
+      <h1 class="card--head">Autres Universites</h1>
+
+      <div class="position">
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/picture.jpg' %}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">Ciu</p>
+          </div>
+          <h2 class=" txt--Univ">Cyprus international university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourse</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'ciu' %}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/Emu-card.jpg' %}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">NEU</p>
+          </div>
+          <h2 class=" txt--Univ">Near east university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourse</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'neu' %}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/CARD-GIRNE.jpg'%}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">BAU</p>
+          </div>
+          <h2 class=" txt--Univ">Bahçeşehir_University</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourses</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'bau'%}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src=" {% static 'image/gallery-bau.jpg'%}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">GAU</p>
+          </div>
+          <h2 class=" txt--Univ">Girne international <br>university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourses</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'gau'%}">voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <!--   ************************** Section  Card  ******************************-->
+
+
+  </main>
+  <footer class="footer">
+    <div class="grid--footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img class="logo1" alt="safari logo" src="{%static 'image/newLogos1.png'%}" />
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="https://instagram.com/safary_travel_?igshid=YmMyMTA2M2Y="
+              target="_blank"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.youtube.com/@safaritravel9538" target="_blank"><ion-icon
+                class="social-icon" name="logo-youtube"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#" target="_blank"><ion-icon class="social-icon"
+                name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; <span class="year">2023</span>-build by x-software, Inc.
+          All rights reserved.
+        </p>
+      </div>
+
+      <div class="address-col">
+        <p class="footer-heading">Address</p>
+        <address class="contacts">
+          <p class="address">
+            Chypre, Nicosias
+          </p>
+          <p>
+            <a class="footer-link" href="tel:  +905338245382"> 533 82 453 82</a><br />
+
+
+            <a class="footer-link" href="mailto:hello@omnifood.com"></a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">compte</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url ''}">Creer un compte</a></li>
+          <li><a class="footer-link" href="{% url' '}"> Postiler</a></li>
+          <li><a class="footer-link" href="#">iOS app</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Agence</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'admissionP'%}">Admission</a></li>
+          <li><a class="footer-link" href="{% url 'services'%}">Services</a></li>
+          <li><a class="footer-link" href="{% url 'register'%}">s'enregistre</a></li>
+          <li><a class="footer-link" href="{% url 'chypre'%}">Chypre</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Universites</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'ciu'%}">Cypris internationale university </a></li>
+          <li><a class="footer-link" href="{% url 'neu'%}">Near east University</a></li>
+          <li><a class="footer-link" href="{%url 'emu'%}">Eastern Mediteranean University</a></li>
+          <li><a class="footer-link" href="{% url 'bau'%}">Bahçeşehir Cyprus University</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </footer>  
+  <script src="{% static 'javascript/accordian.js'%}"></script>
+  <script src="{% static 'javascript/smooth.js'%}"></script>
+
+</body>
+
+</html>

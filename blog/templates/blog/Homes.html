@@ -1,0 +1,1589 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'Css/style.css'%}">
+  <link rel="stylesheet" href="{% static  'Css/ca.css'%}">
+  <link rel="stylesheet" href="{% static  'Css/Query.css'%}">
+  <link rel="stylesheet" href="{% static  'Css/queries.css'%}">
+  <link rel="stylesheet" href="{% static  'Css/testimonial.css'%}">
+  <link rel="stylesheet" href="{% static  'Css/university.css'%}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <title>page-Accueil</title>
+  <style>
+    * {
+    padding: 0;  
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
+  }
+  
+  html {
+    /* font-size: 10px; */
+  
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+    overflow-x: hidden;
+    
+  
+    /* Does NOT work on Safari */
+    /* scroll-behavior: smooth; */
+  }
+  
+  body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 500;
+    overflow-x: hidden;
+ 
+    height: 300%;
+   
+    /* Only works if there is nothing absolutely positioned in relation to body */
+  
+  
+  }
+  .container5 {
+    /* 1140px */
+    max-width: 130rem;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+  }
+  
+  
+  .reuse{
+   margin: 0 auto; 
+  
+  }
+  .margin-top{
+    margin-bottom:5px;
+  }
+  
+  .text-div-hero{
+     margin: 8rem -14rem 0 -14rem ;
+     color:#fff;
+  
+  }
+  .span-hero,.partenaire{
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #f6f6f6;
+    text-transform: uppercase;
+    padding:1rem 1rem;
+    margin-bottom: 1.4rem;
+    margin-top: 1.6rem;
+    letter-spacing: 0.75px;
+    background-color: rgb(29, 60, 240);
+    border-radius: 1.5rem;
+  }
+  .span-hero{
+    font-size: 1.7rem;
+    text-align: center;
+    animation: 5s linear 8s infinite running Myscale;
+  }
+  @keyframes Myscale{
+    50% {transform:scale(0.5,0.5)};
+  }
+  
+  .partenaire{
+    background-color:rgb(255, 94, 0);
+    color:white;
+    font-size: 1.6rem;
+    padding:1rem 2rem;
+  }
+  
+  .img-div-hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr  1fr;
+     justify-content: center;
+     row-gap: 1rem;
+     column-gap: 1rem;
+  }
+  .image{
+    background-color: #e7ddd5;
+  
+  }
+  .img-div{
+    width: 100%;
+  }
+  .image1 , .image2{
+   border-radius: 50%;
+   overflow: hidden;
+   transform: scale(0.6);
+  }
+  .image0{
+    background-color:rgb(255, 227, 162);
+    border-bottom-left-radius: 150%;
+    border-bottom-right-radius: 150%;
+  }
+  .image2{
+  
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 176, 155, 0.5),
+      rgba(150, 201, 61, 1)
+    );
+  }
+  .image1{
+    
+    background-color: rgb(244, 244, 7);
+  }
+  .image3{
+     background-color: rgb(223, 129, 7);
+     border-top-left-radius: 150%;
+     border-top-right-radius: 150%;
+  }
+  .image3 .img4-css{
+    transform: scale(1.8);
+  }
+  
+  
+  
+   
+  
+  
+  
+  .text-h1 {
+    font-size: 6.5rem;
+    line-height: 1.05;
+    margin-bottom: 2.4rem;
+    
+  }
+  
+  .about-safari-hero{ 
+    font-size: 2.3rem;
+    line-height: 1.8;
+    margin-bottom: 1.8rem;
+  }
+  .about-partenariat{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.8;
+    margin-bottom: 1.8rem;
+  }
+  
+  
+  .text-sign{
+   display: flex;
+   gap:1rem;
+  }
+  .link{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .text-sign-btn 
+  {
+     font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: #213be6;
+    padding: 1.6rem 3.2rem;
+    border-radius: 15px;
+    display: inline-block;
+    text-decoration: none;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  }
+  
+  .text-sign .text1-sign-left{
+    background-color: #ffffff;
+    
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    
+  }
+  .text-sign .text1-sign-left .link{
+  color: #ffffff;
+  text-decoration: none;
+    
+  }
+  .text-sign .text1-sign-left {
+    background-color: rgb(255, 94, 0);
+  color: #050505;
+  text-decoration: none;
+    
+  }
+  .left {
+  background-color: rgb(255, 94, 0);
+  color: #fdf9f8;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+  
+  #video-background {
+    position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index:-1;
+     
+  }
+  
+  .video-C::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.062);
+    z-index: 3;
+    
+  }
+  
+  .section1--hero{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1; /* Make the section appear in front of the video background */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    padding-top: 156px;
+    color: #fff; /* Add white text color for better visibility */
+      
+  }
+  .safari-styler,.safari-styler2{
+    display:inline-block;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   letter-spacing: 3px;
+   color: rgb(255, 102, 0);
+  }
+  .safari-styler2{
+    color: rgb(0, 60, 255);
+    margin-right: 11px;
+  }
+  .text-h1{
+      
+      text-align: start;
+    }
+  
+  
+  /***************************************RESPONSIVE LANDING PAGE************************************************************************************************/
+  @media(max-width:104em){
+   .text-div-hero {
+      margin: 8rem -24rem 0 -2rem;
+      color: #fff;
+  
+  }
+  
+    
+  .about-safari-hero{ 
+    font-size: 2.3rem;
+    line-height: 1.5;
+    margin-bottom: 2.4rem;
+  }
+  }
+  /**** 1456=91px****/
+  @media (max-width: 91em){
+  .text-div-hero {
+      margin: -5rem -24rem 0 5rem;
+      color: #fff;
+  }
+  .text-h1{
+    font-size:5.5rem;
+    line-height: 1.05;
+    margin-bottom: 2.4rem;
+  }
+  .span-hero{
+    text-align: center;
+  
+   
+    line-height: 2;
+   
+  
+  } 
+    
+  
+  }
+  @media (max-width: 71em){
+    #video-background {
+    position: relative;
+      top: 0;
+      left: 0;
+      width: 125%;
+      height: 100%;
+      object-fit: cover;
+      z-index:-1;
+      
+  }
+    
+  
+  }
+  /*******936PX=58EM*****/
+  
+  
+  
+  
+  /*************1038=65em***********/
+  @media (max-width: 65em){
+  
+   
+  
+  .text-h1{
+    font: size 4.7em;
+  }
+  .about-partenariat{
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 1.8;
+    margin-bottom: 2.4rem;
+  }
+  
+  .partenaire{
+    font-size: 1.4rem;
+    font-weight: 700;
+    
+    padding:1rem 2rem;
+    margin-bottom: 1.4rem;
+    margin-top: 1.6rem;
+   
+  }
+  #video-background {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 133%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+  }
+    
+  
+  }
+  @media (max-width: 58em){
+  
+  #video-background {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 158%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+    
+  } 
+  }
+  /****866PX=54.125****/
+  @media (max-width: 54em){
+  
+  #video-background {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 174%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+    
+  } 
+  }
+  @media (max-width: 50em){
+  
+  #video-background {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 177%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+    
+  } 
+  .text-h1{
+      
+      text-align: start;
+    }
+  }
+  /******770px=48em****/
+  @media (max-width: 48em){
+  
+  #video-background {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 190%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+    
+  } 
+  .text-h1{
+      
+      text-align: start;
+    }
+  }
+  @media (max-width: 45em){
+  
+  #video-background {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 197%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+    
+  }
+  .text-h1{
+      
+      text-align: start;
+    } 
+  }
+  @media (max-width: 44em){
+  
+  #video-background {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 255%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+    
+  }
+  .text-sign-btn 
+  {
+     font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+   
+    background-color: #213be6;
+    padding: 1.2rem 2.4rem;
+    
+    margin-bottom: 40px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  }
+  
+  .partenaire{
+    padding:0.8rem 1.6rem;
+  }
+  .text-div-hero {
+      margin: -5rem -24rem 0 0rem;
+     padding: 0 5rem;
+     
+     
+  }
+  .text-h1{
+      
+      text-align: start;
+    }
+  }
+  
+  /******************610=38em********/
+  @media (max-width:40em){
+    .text-h1{
+      font-size: 4.5rem;
+    }
+  .partenaire{
+    padding:0.8rem 1.6rem;
+  }
+  .text-div-hero {
+      margin: -5rem -24rem 0 -3rem;
+     
+     
+  }
+  .text-sign-btn{
+    padding: 0.8rem 1.6rem;
+  }
+  #video-background {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 285%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+    
+  }
+  .text-h1{
+      
+      text-align: start;
+    } 
+  
+  }
+  /**************558px=34em*************/
+  @media (max-width:34em){
+  
+    .text-h1{
+      font-size: 4.4rem;
+    }
+  .partenaire{
+    padding:0.8rem 1.6rem;
+  }
+  #video-background {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 299%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+    
+  } 
+  .text-h1{
+      
+      text-align: start;
+    }
+  }
+  /******30=486px****/
+  @media (max-width:30em){
+  
+    .text-h1{
+      font-size: 4.4rem;
+      text-align: start;
+    }
+  .partenaire{
+    padding:0.8rem 1.6rem;
+  }
+  .text-div-hero {
+      margin: -5rem -24rem 0 -5rem;
+     padding: 0 5rem;
+     
+     
+  }
+  .span-hero{
+    width: 65%;
+    padding:2rem 2rem ;
+    font-size: 1.7rem;
+    line-height: 2;
+    margin-right: 10rem;
+  }
+  .text-sign-btn {
+      
+      padding: 1.2rem 2.4rem;
+      border-radius: 15px;
+    
+  }
+  #video-background {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 315%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+    overflow: hidden;
+    
+  } 
+    
+  
+  }
+  @media (max-width:30em){
+  html{
+    font-size: 56%;
+  }
+    .text-h1{
+      font-size: 4.4rem;
+    }
+  .partenaire{
+    padding:0.8rem 1.6rem;
+  }
+  .text-div-hero {
+      margin: -5rem -24rem 0 -5rem;
+     padding: 0 5rem;
+     
+     
+  }
+  #video-background {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 320%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+    
+  }
+  .section1--hero{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1; /* Make the section appear in front of the video background */
+    display: grid;
+    grid-template-columns: 0.7fr 0.7fr;
+    column-gap: 3rem;
+    padding-top: 156px;
+    color: #fff; /* Add white text color for better visibility */
+      
+  
+  } 
+  .text-div-hero{
+    text-align: start;
+  }
+  .span-hero{
+    width: 69%;
+    padding:2rem 2rem ;
+    font-size: 1.7rem;
+    line-height: 2;
+    margin: 0 auto;
+  }
+  
+  }
+  @media (max-width:27em){
+  html{
+    font-size: 54%;
+  }
+    .text-h1{
+      font-size: 4.5rem;
+      font-weight: 700;
+      text-align: start;
+    }
+  .partenaire{
+    padding:0.8rem 1.6rem;
+  }
+  .text-div-hero {
+      margin: -5rem -24rem 0 -5rem;
+     padding: 0 5rem;
+     
+     
+  }
+  .about-safari-hero {
+      font-size: 2rem;
+      line-height: 1.4;
+      margin-bottom: 1.8rem;
+  }
+  #video-background {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 385%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+    
+  }
+  .span-hero{
+    font-size: 1.7rem;
+    width: 70%;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+  
+  }
+  .section1--hero{
+  
+    grid-template-columns: 0.5fr 0.5fr;
+   
+    
+      
+  
+  }
+  
+  }
+  @media (max-width:25em){
+  .section1--hero{
+  
+    grid-template-columns: 0.4fr 0.4fr;
+   
+    
+      
+  
+  }
+  
+   #video-background {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 515%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+    
+  }
+  
+  }
+  
+
+
+
+
+ 
+
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+         
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 3.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+  
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    /* 3/5 = 60% + 2/5 = 40% */
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+  .testimonials {
+    display: grid;
+    grid-template-columns: 0.9fr 0.9fr;
+    row-gap: 4.8rem;
+    column-gap: 9rem;
+    margin: 4rem;
+}
+
+}
+
+
+@media (max-width: 34em) {
+  .testimonials {
+    display: grid;
+    grid-template-columns: 0.9fr 0.9fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+    margin: 0 6rem;
+}
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  
+
+ 
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+
+}              
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+.card:before {
+
+  background: linear-gradient(
+    to bottom,
+    rgba(2, 120, 198, 0),
+    rgba(17, 17, 17, 0.5)
+
+  );
+  
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 1;
+ 
+}
+
+
+
+  .card:hover:before {
+  opacity: 1;
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 1;
+  left: -15px;
+  bottom: -45px;
+
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+.card .info   .btn{
+        display: inline-block;
+    }
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+
+
+
+
+
+
+  
+  </style>    
+</head>
+
+
+<body>
+
+  <!--header -->
+  <!--header -->
+<!--header -->
+<header class=" header">
+  <img class="logo" src="{%static 'image/newLogos1.png'%}" alt="logo">
+  <nav class=" main-nav">
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link" href="{% url 'HOMES'%}">Accueil</a></li>
+      <li>
+        <a class="main-nav-link" href="{% url 'admissionP'%}">Admission</a>
+
+      </li>
+      <li>
+        <div class="mobile-Display accordion-item">
+            <div class="accordion-item-header">
+              <a class="list-ex" href="">Universites</a>
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <ul class="accord-list">
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+    
+                </ul>
+              </div>
+            </div>
+         
+        </div>
+      </li>
+      <li class="mobile-Display14" >
+        <a id="mobile-Display1" class="  main-nav-link" href="">Universites</a>
+        <div class="mobile-Display1 div-sub">
+          <ion-icon class="icon-drop-down" name="caret-up-sharp"></ion-icon>
+          <ul class="mobile-Display1">
+            <li> <a class="effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+
+          </ul>
+          
+        </div>
+        
+           
+      </li>
+      <li><a class="main-nav-link" href="{% url 'services'%}"> Services</a></li>
+      <li><a class="main-nav-link" href="{% url 'chypre'%}"> Chypre </a></li>
+      <li class="mobile-Display">
+       
+       
+         
+      </li>
+    </ul>
+
+  </nav>
+
+  <div class=" sign--header">
+    
+    <a class=" P-btn right btn-login " href="{%url 'login'%}">Se connecter</a>
+    <a class=" P-btn left btn-login   " href="%url 'register'%}">Postiler</a>
+    
+
+  </div>
+  <button class="btn-mobile-nav">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+  </button>
+
+</header>
+<!--emd header-->
+  <!--emd header-->
+
+<!--emd header-->
+
+
+  <!-- Section Main  -->
+  <main>
+    <div>
+      <div id="video-container" class="video-C">
+        <video id="video-background" autoplay loop muted>
+          <source src="{% static 'video-backgroundmp4.mp4' %}" type="video/webm">
+        </video>
+        
+    </div>
+          <section class="container5 margin-top section1--hero">
+                  <div class="text-div-hero">
+                    <span class="span-hero "> TOUTES VOS DÉMARCHES SONT GRATUITES, EN SEULEMENT 10 JOURS NOTRE ÉQUIPE VOUS ACCUEILLE À L’AEROPORT</span>
+                     <h1 class="text-h1">Votre avenir commence par ici avec <span class="safari-styler"><strong class="safari-styler2">safari</strong>travel</span> </h1>
+                      <p class="about-safari-hero">Safari Travel est parmis les 
+                        structure d’Afrique 
+                        centrale les plus crédibles qui a déjà formé, managé et encadré plusieurs promotions
+                        à matières de voyages avec plus de 4 ans d'expérience qui a ouvert cette opportunité d’études depuis plusieurs années et a déjà fait formé plusieurs promotions.</p>
+                        <p class="about-partenariat">
+                          En partenariat avec <span class="partenaire" >Cyprus international university</a></span> 
+                        </p>
+                        <div class="text-sign">
+                          <button class=" text1-sign-left text-sign-btn"> <a class="link" href="{% url 'register' %}">Postiler</a></button>
+                          <button class=" text-sign-btn"> <a class="link" href="{% url 'login'%}">Se connecter</a></button>
+                        </div>
+                        <div class="customer">
+                        
+                        </div>
+                    </div>
+                 
+                  <div class="img-div-hero">
+        
+                  </div>
+          </section>    
+    </div> 
+
+
+
+    <!-- TESTIMONIALS -->
+    <section class="section-sliter-testimonial">
+
+      <div class="testimonial-section">
+        <div class="testimonial-slider">
+          <div class="  testimonial">
+
+            <img src="{% static 'image/emu-color.png' %}">
+
+          </div>
+          <div class=" testimonial">
+
+            <img src="{% static 'image/near new 1.png' %}" alt="Client 2">
+
+          </div>
+          <div class="testimonial">
+            <img src="{% static 'image/CİU-COLOR.png' %}" alt="Client 2">
+
+          </div>
+          <div class="testimonial">
+            <img src="{% static 'image/girne-american-university-.png' %}" alt="Client 2">
+
+          </div>
+          <div class="testimonial">
+            <img src="{% static 'image/Bahçeşehir_University_logo.png' %}" alt="Client 2">
+
+          </div>
+          <div class="testimonial">
+            <img src="{% static 'image/final.png' %}" alt="Client 2">
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
+    <div class="let">
+      <h1 class="heading-let"><span>Top</span> destination </h1>
+      <p class="p--second">Explorer les universités<a href=""></a> a Chypre du Nord Cyprus. </p>
+    
+
+    </div>
+    <!--   ************************** Section  wrapper  ******************************
+ <section class="section--university">
+  <div class="wrapper">
+      <div class="card">
+          <img src="image/logo.jpg">
+          <div class="info">
+              <h1>Heading</h1>
+               <p> Welcome to our university , we like you</p>
+               <a href="#" class="btn">Read more</a>
+          </div>
+      </div>
+      <div class="card">
+          <img src="image/illustra.png">
+          <div class="info">
+              <h1>Heading</h1>
+              <p> Welcome to our university , we like you</p>
+               <a href="#" class="btn">Read more</a>
+          </div>
+      </div>
+      <div class="card">
+          <img src="image/illustra.img.png">
+          <div class="info">
+              <h1>Heading</h1>
+              <p> Welcome to our university , we like you</p>
+               <a href="#" class="btn">Read more</a>
+          </div>
+      </div>
+      <div class="card">
+          <img src="image/abacus-g5343c9ff3_1280.jpg">
+          <div class="info">
+              <h1>Heading</h1>
+              <p> Welcome to our university , we like you</p>
+               <a href="#" class="btn">Read more</a>
+          </div>
+      </div>
+      <div class="card">
+          <img src="image/pexels-pixabay-267885.jpg">
+          <div class="info">
+              <h1>Heading</h1>
+              <p> Welcome to our university , we like you</p>
+               <a href="#" class="btn">Read more</a>
+          </div>
+      </div>
+  </div>
+
+</section> -->
+
+    <!--     ***********************************Section  learn ************************************************* -->
+
+    <Section class=" section-card">
+      <div class="wrapper ">
+        <div class="card">
+          <img src="{% static 'image/picture 6.jpg' %}">
+          <div class="info">
+            <a class="btn-info" href="{% url 'ciu' %}">
+              <h1>Cyprus international university</h1>
+              <p class="P--before"> Bienvenue dans notre université </p>
+              <a href=" {% url 'ciu'%}" class="btn">Voir</a>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{% static 'image/student near.jpg' %}">
+          <div class="info">
+            <a class="btn-info" href="{% url 'neu' %} ">
+              <h1>Near east university</h1>
+              <p class="P--before"> Bienvenue dans notre université</p>
+              <a href="{% url 'neu' %}" class="btn">Voir</a>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{% static 'image/graduate-students-wearing-cap-gown.jpg' %}">
+          <div class="info">
+            <a class="btn-info" href=" {% url 'gau'%}">
+              <h1>Girne-american-university</h1>
+              <p class="P--before"> Bienvenue dans notre université</p>
+              <a href="{% url 'gau'%}" class="btn">Voir</a>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{% static 'image/gallery-bau.jpg' %}">
+          <div class="info">
+            <a class="btn-info" href="{% url 'emu'%}">
+              <h1>Eastern Mediterranean University</h1>
+              <p class="P--before"> Bienvenue dans notre université</p>
+              <a href="{% url 'emu'%}" class="btn">Voir</a>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{% static 'image/card--Bau.jpg' %}">
+          <div class="info">
+            <a class="btn-info" href="{% url 'bau' %}">
+              <h1>Bahçeşehir_University</h1>
+              <p class="P--before"> Bienvenue dans notre université</p>
+              <a href="{% url 'bau' %}" class="btn">Voir</a>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{% static 'image/CARD-GIRNE.jpg' %} ">
+          <div class="info">
+            <a class="btn-info" href="{% url 'neu' %}">
+              <h1>Near east university</h1>
+              <p class="P--before"> Bienvenue dans notre université</p>
+              <a href="{% url 'neu' %}" class="btn">Voir</a>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </Section>
+
+
+    <!--***********************************Section************************************************* -->
+
+
+ 
+
+
+
+
+    <section class=" section--video">
+
+      <div class="left-about">
+
+        <h1 class="left-heading">Bienvenue a Safari travel</h1>
+
+        <div class="left-paragraphe">
+          <p class="left-paragraphe-univ">Bienvenue chez Safari Travel, votre agence de
+            voyage de confiance pour vos projets d'études et de voyages à l'étranger. Chez Safari Travel,
+            nous croyons que chaque individu mérite une chance de découvrir le monde et de poursuivre ses rêves.
+            C'est pourquoi nous offrons une variété de services pour aider les Congolais à étudier à l'étranger et pour
+            toute personne qui souhaite voyager dans différents pays.
+          </p>
+          <p class="left-paragraphe-univ">
+            Chez Safari Travel, nous offrons des services complets pour aider toute
+            personne à étudier à l'étranger. Nous aidons nos clients à trouver les
+            meilleures universités et programmes d'études à l'étranger qui
+            correspondent à leurs intérêts.
+            Nous fournissons également des conseils sur les démarches
+            administratives, les visas et les documents nécessaires pour étudier à l'étranger.
+          </P>
+          <P class="left-paragraphe-univ">
+            Que vous soyez un étudiant qui souhaite étudier à l'étranger ou simplement un passionné
+            de voyages, Safari Travel est votre partenaire idéal. Nous sommes là pour vous aider à
+            réaliser vos rêves et à découvrir le monde.
+            Contactez-nous dès aujourd'hui pour en savoir plus sur nos services et pour commencer
+            votre aventure de voyage avec Safari Travel.</p>
+        </div>
+      </div>
+      <div class="video">
+        <iframe class="video--iframe" width="360" height="100%"
+          src="https://www.youtube.com/embed/zaDbeBPL544?rel=0"></iframe>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="section-card">
+      <!-- card layout-->
+
+      <div class="position">
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/picture.jpg' %}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">Ciu</p>
+          </div>
+          <h2 class=" txt--Univ">Cyprus international university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourse</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'ciu' %}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/Emu-card.jpg' %}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">NEU</p>
+          </div>
+          <h2 class=" txt--Univ">Near east university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourse</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'neu' %}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/CARD-GIRNE.jpg'%}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">BAU</p>
+          </div>
+          <h2 class=" txt--Univ">Bahçeşehir_University</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourses</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'bau'%}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src=" {% static 'image/gallery-bau.jpg'%}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">GAU</p>
+          </div>
+          <h2 class=" txt--Univ">Girne international <br>university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourses</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'gau'%}">voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+    </section>
+
+   
+
+
+
+
+
+
+
+    <section class="section-testimonials">
+      <div class="testimonials-container">
+        <span class="subheading">Commentaire</span>
+        <h2 class="heading-secondary">Commentaire des Etudiants</h2>
+
+        <div class="testimonials">
+          <figure class="testimonial">
+            <img class="testimonial-img" alt="Photo of customer Dave Bryson" src="{% static 'image/hannah.jpg'%}" />
+            <blockquote class="testimonial-text">
+              Le fait de passer quelques années à Chypre en tant qu’étudiant international m'as permis 
+              de développer un sentiment d’indépendance et de maturité tout en élargissant mes horizons de bien des
+              façons
+              allant au-delà des livres, des cours et des séminaires..
+            </blockquote>
+            <p class="testimonial-name">&mdash; wampoyi</p>
+          </figure>
+
+         
+
+          
+
+          <figure class="testimonial">
+            <img class="testimonial-img" alt="Photo of customer Hannah Smith" src="{% static 'image/dave.jpg'%}" />
+            <blockquote class="testimonial-text">
+              Grâce à mon expérience d'étudiant à Chypre, j'ai pu développer et améliorer divers aspects de ma vie. 
+              Sur le plan physique, j'ai eu l'opportunité de découvrir de nouvelles activités 
+               j'ai également été exposé à un environnement culturel riche, ce qui m'a permis d'élargir mes horizons intellectuels
+             
+            </blockquote>
+            <p class="testimonial-name">&mdash; grace oleko</p>
+          </figure>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="{% static 'image/Image 1.jpeg'%}" alt="Photo of beautifully
+            arranged food" />
+          <!-- <figcaption>Caption</figcaption> -->
+        </figure>
+        <figure class="gallery-item">
+          <img src=" {%static 'image/Image.jpeg'%}" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="{%static 'image/image 9.jpg'%}" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="{%static 'image/image 12.jpg'%}" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="{%static 'image/image5.jpeg'%}" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="{%static 'image/image4.jpeg'%}" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+
+
+
+
+
+      </div>
+    </section>
+
+
+
+
+    <!--   ************************** Section  Card  ******************************-->
+
+
+
+    <!--   ************************** Section  Card  ******************************-->
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="grid--footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img class="logo1" alt="safari logo" src="{%static 'image/newLogos1.png'%}" />
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="https://instagram.com/safary_travel_?igshid=YmMyMTA2M2Y="
+              target="_blank"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.youtube.com/@safaritravel9538" target="_blank"><ion-icon
+                class="social-icon" name="logo-youtube"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#" target="_blank"><ion-icon class="social-icon"
+                name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; <span class="year">2023</span>-build by x-software, Inc.
+          All rights reserved.
+        </p>
+      </div>
+
+      <div class="address-col">
+        <p class="footer-heading">Address</p>
+        <address class="contacts">
+          <p class="address">
+            Chypre, Nicosias
+          </p>
+          <p>
+            <a class="footer-link" href="tel:  +905338245382"> 533 82 453 82</a><br />
+
+
+            <a class="footer-link" href="mailto:hello@omnifood.com"></a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">compte</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url ''}">Creer un compte</a></li>
+          <li><a class="footer-link" href="{% url' '}"> Postiler</a></li>
+          <li><a class="footer-link" href="#">iOS app</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Agence</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'admissionP'%}">Admission</a></li>
+          <li><a class="footer-link" href="{% url 'services'%}">Services</a></li>
+          <li><a class="footer-link" href="{% url 'register'%}">s'enregistre</a></li>
+          <li><a class="footer-link" href="{% url 'chypre'%}">Chypre</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Universites</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'ciu'%}">Cypris internationale university </a></li>
+          <li><a class="footer-link" href="{% url 'neu'%}">Near east University</a></li>
+          <li><a class="footer-link" href="{%url 'emu'%}">Eastern Mediteranean University</a></li>
+          <li><a class="footer-link" href="{% url 'bau'%}">Bahçeşehir Cyprus University</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </footer>  
+  <script src="{% static 'javascript/accordian.js'%}"></script>
+  <script src="{% static 'javascript/smooth.js'%}"></script>   
+
+</body>
+
+</html>

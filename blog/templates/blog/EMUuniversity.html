@@ -1,0 +1,823 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'Css/style.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/ca.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/styleadmin.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/university.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/Query.css'%}">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>Eastern Mediteranean</title>
+
+  <style>
+    .section-uni-video {
+  background: url('/static/image/Background5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left {
+  background-color: rgb(255, 94, 0);
+  color: #fdf9f8;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+   
+  </style>
+
+
+</head>
+
+<body>
+   <!--header -->
+<!--header -->
+<header class=" header">
+  <img class="logo" src="{%static 'image/newLogos1.png'%}" alt="logo">
+  <nav class=" main-nav">
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link" href="{% url 'HOMES'%}">Accueil</a></li>
+      <li>
+        <a class="main-nav-link" href="{% url 'admissionP'%}">Admission</a>
+
+      </li>
+      <li>
+        <div class="mobile-Display accordion-item">
+            <div class="accordion-item-header">
+              <a class="list-ex" href="">Universites</a>
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <ul class="accord-list">
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+    
+                </ul>
+              </div>
+            </div>
+         
+        </div>
+      </li>
+      <li class="mobile-Display14" >
+        <a id="mobile-Display1" class="  main-nav-link" href="">Universites</a>
+        <div class="mobile-Display1 div-sub">
+          <ion-icon class="icon-drop-down" name="caret-up-sharp"></ion-icon>
+          <ul class="mobile-Display1">
+            <li> <a class="effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+
+          </ul>
+          
+        </div>
+        
+           
+      </li>
+      <li><a class="main-nav-link" href="{% url 'services'%}"> Services</a></li>
+      <li><a class="main-nav-link" href="{% url 'chypre'%}"> Chypre </a></li>
+      <li class="mobile-Display">
+       
+       
+         
+      </li>
+    </ul>
+
+  </nav>
+
+  <div class=" sign--header">
+    
+    <a class=" P-btn right btn-login " href="{%url 'login'%}">Se connecter</a>
+    <a class=" P-btn left btn-login   " href="{%url 'register'%}">Postiler</a>
+    
+
+  </div>
+  <button class="btn-mobile-nav">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+  </button>
+
+</header>
+<!--emd header-->
+  <!-- Section Main  -->
+
+  <!-- Section Main  -->
+  <main>
+
+    <section class="section-uni-video" 
+    >
+      <div class="right--video">
+        <img class="img-video" src="{%static 'image/gallery-bau.jpg'%}" alt="">
+
+      </div>
+      <div class="left--video">
+        <div class="left--video-text">
+          <img class="univ-logos-left" src="{% static 'image/EMU_Cyprus.png'%}" alt="Client 2">
+          <h1>Bienvenue à Eastern Mediteranean University</h1>
+
+          <p>Libérez votre potentiel , acquérez un avantage compétitif et faites la différence grâce à une education à
+            Eastern Mediterranean University </p>
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+    <section class=" Emu-grid about-university" >
+      <div class="left1">
+
+        <h1>Autre information</h1>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Bourse
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <p class="paragraph">
+                  L'EMU offre des bourses d'études basées sur le mérite académique à tous ses étudiants potentiels et
+                  actuels inscrits dans des programmes de premier et de deuxième cycle.</p>
+
+                <p class="paragraph"><strong>50 % de bourse</strong>
+                  à tous les étudiants internationaux inscrits à l'université pour promouvoir la diversité et augmenter
+                  la visibilité internationale de l'Université. Cette bourse couvre environ la moitié des frais de
+                  scolarité et est offerte à tous les étudiants internationaux en même temps que leur admission.</p>
+
+                <p class="paragraph"><strong>Basé sur le mérite</strong>
+                  Pour les étudiants internationaux inscrits dans des programmes tels que la médecine et la pharmacie,
+                  cette bourse est réservée aux étudiants de haut niveau qui montrent des compétences académiques
+                  exceptionnelles au cours de leur première année d'études à l'université.</p>
+
+                <p class="paragraph"><strong>Réduction pour les frères et sœurs</strong>
+                  Les frères et sœurs qui fréquentent l'université bénéficient chacun d'une réduction de 25% sur leurs
+                  frais de scolarité (prouver la parenté est requis).
+                  "Pour les frères et sœurs supplémentaires au-delà des deux premiers qui étudient à l'EMU, la réduction
+                  offerte est de 75% sur leurs frais de tuition."
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Logement 
+            </div>
+            <div class="accordion-item-body  accordian-depart">
+              <div class="accordion-item-body-content">
+                <p class="paragraph">Les dortoirs modernes et entièrement équipés du campus de l'EMU accueillent plus de
+                  10 000 étudiants et les nouveaux arrivants reçoivent un traitement préférentiel. </p>
+                <p class="paragraph">L'EMU a 15 complexes de dortoirs sur le campus et peut accueillir plus de 7500
+                  étudiants.</p>
+                <p class="paragraph">Bien que les nouveaux étudiants soient prioritaires, il est important de réserver
+                  une chambre tôt. L'EMU propose des appartements entièrement meublés avec un salon, une cuisine, une
+                  salle de bain, des toilettes et un balcon.</p>
+                <p class="paragraph">mais aussi les étudiants peuvent également trouver un logement en dehors du campus
+                  à moindre coût.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <h5 class="faculte-explore"> Voir Tous les Programmes des facultés </h5>
+        <a class="view-all" href="{% url 'underemu'%}">Click ici</a>
+      </div>
+
+
+
+
+      <div class="center1">
+        <h1> Présentation de Eastern Mediterranean University</h1>
+        <div class="text-center">
+          <p>
+            The Eastern Mediterranean University (EMU) située sur l'île méditerranéenne de Chypre, a été fondée en 1979
+            dans la République turque de Chypre du Nord (TRNC) en tant qu'institution destinée à former et développer
+            les ressources humaines pour un nouveau pays. Au fil des ans, l'EMU a non seulement connu une croissance
+            exponentielle pour devenir une université d'État reconnue internationalement de la République turque de
+            Chypre du Nord, comptant plus de 64 000 diplômés et formant actuellement plus de 16 000 étudiants, mais elle
+            est également devenue une université de renom dans le monde, où la langue d'enseignement est l'anglais.</p>
+
+          <p> L'EMU est classée dans la bande 501-600 du classement de l'université de Times Higher Education et est
+            également classée dans la bande 251-300 des universités jeunes.</p>
+          <p>L'EMU offre aux étudiants une formation avec une pléthore d'accréditations reconnues et récompensées à
+            l'échelle internationale. Avec plus de 107 programmes de premier cycle, 103 programmes de deuxième cycle et
+            jusqu'à 100% de bourses d'études pour les étudiants internationaux, cette université classée dans le monde
+            n'est pas seulement l'endroit idéal pour faire un pas supplémentaire vers votre future carrière
+            internationale, mais offre également une expérience unique d'obtenir un diplôme prestigieux d'une
+            institution de classe mondiale.</p>
+          <div class="video-about">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/uuOL_mPvbcU" controls=0
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <h1>Frais académique abordables</h1>
+          <p>
+            Eastern Mediterranean University (EMU) offre des frais de scolarité abordables et accessibles.
+            La demande d'admission à l'université est gratuite et les frais de scolarité incluent les coûts pour les
+            activités.
+            Après l'approbation de votre demande, le montant des premiers frais de scolarité sera indiqué dans votre
+            lettre d'acceptation.
+            Après avoir payé les frais, vous recevrez un certificat d'étudiant qui vous permettra de poursuivre votre
+            voyage et votre inscription.
+            Bien que les frais de scolarité soient un facteur important, d'autres dépenses telles que les livres,
+            le logement, l'assurance et les loisirs doivent également être prises en compte.
+          </p>
+          <p>
+            En comparaison avec la qualité élevée de l'enseignement
+            fourni, le coût à Eastern Mediterranean University (EMU) est assez faible.
+            L'université offre également des bourses,
+            des réductions de frais de scolarité et des
+            remises pour réduire davantage le coût de l'éducation.
+            Tous les étudiants internationaux à Eastern Mediterranean University (EMU) reçoivent des bourses qui
+            couvrent 50% des frais de scolarité, et
+            les étudiants ayant des antécédents académiques exceptionnels peuvent être admissibles à une couverture de
+            bourse de 100%.
+
+          </p>
+
+        </div>
+        <table class="table-view">
+          <thead>
+            <tr>
+              <th>Programmes de premier cycle</th>
+              <th>Programmes</th>
+              <th>Sans bourse</th>
+              <th>50% de bourse</th>
+
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th>Faculté des Arts et des Sciences</th>
+              <td>Tous</td>
+              <td>-</td>
+              <td>$4.828,50</td>
+
+            </tr>
+            <tr>
+              <th>Faculté d'Economie et de Gestion</th>
+              <td>Tous</td>
+              <td>-</td>
+              <td>$4.828,50</td>
+
+            </tr>
+            <tr>
+              <th>Faculté des Etudes en Communication et Médias</th>
+              <td>Tous</td>
+              <td>-</td>
+              <td>$4.828,50 </td>
+
+            </tr>
+            <tr>
+              <th>Ecole des Technologies de l'Information</th>
+              <td>Technologies de l'Information</td>
+              <td>-</td>
+              <td>$4.828,50 </td>
+
+            </tr>
+            <tr>
+              <th>Ecole du Tourisme et de l'Hôtellerie</th>
+              <td>Tous</td>
+              <td>-</td>
+              <td>$4.949,25 </td>
+
+            </tr>
+            <tr>
+              <th>Faculté de Génie</th>
+              <td>Tous</td>
+              <td>-</td>
+              <td>$5.847,00</td>
+
+            </tr>
+            <tr>
+              <th>Faculté d'Architecture</th>
+              <td>Tous</td>
+              <td>-</td>
+              <td>$5.847,00</td>
+
+            </tr>
+
+
+            <tr>
+              <th>Faculté de Droit</th>
+              <td>Tous</td>
+              <td>-</td>
+              <td>$7.647,75</td>
+            </tr>
+            <tr>
+              <th>Faculté des Sciences de la Santé</th>
+              <td>Tous</td>
+              <td>-</td>
+              <td>$8.193,75 </td>
+
+            </tr>
+            <tr>
+              <th>Faculté de Pharmacie</th>
+              <td>Tous</td>
+              <td>-</td>
+              <td>$8.682,00</td>
+
+            </tr>
+            <tr>
+            <tr>
+              <th>FACULTÉ DE L'ÉDUCATION</th>
+              <td colspan="2">
+                -INFORMATIQUE ET TECH. D'ENSEIGNEMENT
+                <br><br>
+                -AUTRES DÉPARTEMENTS
+              </td>
+              <td colspan="2">
+                $-4.828,50
+                <br><br>
+                -$5.847,00
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="scholarship"> 20% des bourses pour ces facultés </h2>
+        <table class="table-view">
+          <thead>
+            <tr>
+              <th>Programmes de premier cycle</th>
+              <th>Programmes</th>
+              <th>Sans bourse</th>
+              <th>20% de bourse</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Faculté de dentisterie</th>
+              <td>Tout</td>
+              <td>$19.192.50 $</td>
+              <td>$15.444,00
+              </td>
+
+            </tr>
+            <tr>
+              <th>Faculté de Medicine</th>
+              <td>tous</td>
+              <td>$21.198.00</td>
+              <td>$17.048,40</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+      <div class="right1">
+        <h1>Frais et Bourse</h1>
+
+        <div class="accordion">
+
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Programme de Master
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Programme avec thèse</th>
+                      <th>Montant</th>
+
+
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th> frais par course</th>
+                      <td>$815,50 </td>
+
+                    </tr>
+                    <tr>
+                      <th>Frais d'inscription à la thèse (par semestre)</th>
+                      <td>$1.122,50</td>
+
+
+                    </tr>
+
+                    <tr>
+                      <th>Frais pour le premier séminaire (inscription)</th>
+                      <td>free</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Frais pour le séminaire Deuxième(inscription)</th>
+                      <td>$163</td>
+
+
+                    </tr>
+
+                    <tr>
+                      <th>ENG511 , ENGL509 (24 heures/semaine) (frais semestriels) 2</th>
+                      <td>$2.100 </td>
+
+
+                    </tr>
+                    <tr>
+                      <th>ENG513 -, 515,521,523,525,528</th>
+                      <td>$407.75 </td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Cours sur les programmes de déficience</th>
+                      <td>$570,50 </td>
+
+
+                    </tr>
+
+
+
+
+                  </tbody>
+                </table>
+
+                <h2 class=" brigde--thesis"> Sans thèse</h2>
+
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Programme sans thèse</th>
+                      <th>Amount</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>frais par course</th>
+                      <td>$815,50 </td>
+
+                    </tr>
+                    <tr>
+                      <th>Projet (première inscription)</th>
+                      <td>free</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Projet (deuxième inscription) </th>
+                      <td>$407.75</td>
+
+
+                    </tr>
+
+                    <tr>
+                      <th>ENG511 , ENGL509 (24 heures/semaine) (frais semestriels) 2</th>
+                      <td>$2.100 </td>
+
+
+                    </tr>
+                    <tr>
+                      <th>ENG513 -, 515,521,523,525,528</th>
+                      <td>$407.75 </td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Cours sur les programmes de déficience</th>
+                      <td>$570,50 </td>
+
+
+                    </tr>
+
+
+
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Programme de Dotoract
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Programme</th>
+                      <th>Montant</th>
+
+
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th>Frais par cours</th>
+                      <td>$1390 </td>
+
+                    </tr>
+                    <tr>
+                      <th>Frais d'inscription à la thèse (par semestre)</th>
+                      <td>$1821</td>
+
+
+                    </tr>
+
+                    <tr>
+                      <th>Term project first(registration)</th>
+                      <td>--</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Term project second(registration)</th>
+                      <td>--</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Frais pour le premier séminaire (inscription)</th>
+                      <td>free</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Frais pour le séminaire Deuxième (inscription)</th>
+                      <td>$326</td>
+
+
+                    </tr>
+
+
+                    <tr>
+                      <th>ENG511 , ENGL509 (24 heures/semaine) (frais semestriels) 2</th>
+                      <td>$2.100 (50% reduction)</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>ENGL - 513, 515, 521, 523, 525, 528</th>
+                      <td>$405.75 (50% reduction)</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Cours sur les programmes de déficience</th>
+                      <td>$570,50 (50% reduction) </td>
+
+
+                    </tr>
+
+
+
+
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+       <!--   ************************** Section  Card  ******************************-->
+    
+      
+    <!--   ************************** Section  Card  ******************************-->
+    
+    <section class="section-card">
+      <!-- card layout-->
+      <h1 class="card--head">Autres Universites</h1>
+
+      <div class="position">
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/picture.jpg' %}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">Ciu</p>
+          </div>
+          <h2 class=" txt--Univ">Cyprus international university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourse</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'ciu' %}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/Emu-card.jpg' %}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">NEU</p>
+          </div>
+          <h2 class=" txt--Univ">Near east university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourse</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'neu' %}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/CARD-GIRNE.jpg'%}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">BAU</p>
+          </div>
+          <h2 class=" txt--Univ">Bahçeşehir_University</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourses</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'bau'%}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src=" {% static 'image/gallery-bau.jpg'%}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">GAU</p>
+          </div>
+          <h2 class=" txt--Univ">Girne international <br>university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourses</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'gau'%}">voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <!--   ************************** Section  Card  ******************************-->
+
+
+  </main>
+  
+  <footer class="footer">
+    <div class="grid--footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img class="logo1" alt="safari logo" src="{%static 'image/newLogos1.png'%}" />
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="https://instagram.com/safary_travel_?igshid=YmMyMTA2M2Y="
+              target="_blank"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.youtube.com/@safaritravel9538" target="_blank"><ion-icon
+                class="social-icon" name="logo-youtube"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#" target="_blank"><ion-icon class="social-icon"
+                name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; <span class="year">2023</span>-build by x-software, Inc.
+          All rights reserved.
+        </p>
+      </div>
+
+      <div class="address-col">
+        <p class="footer-heading">Address</p>
+        <address class="contacts">
+          <p class="address">
+            Chypre, Nicosias
+          </p>
+          <p>
+            <a class="footer-link" href="tel:  +905338245382"> 533 82 453 82</a><br />
+
+
+            <a class="footer-link" href="mailto:hello@omnifood.com"></a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">compte</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url ''}">Creer un compte</a></li>
+          <li><a class="footer-link" href="{% url' '}"> Postiler</a></li>
+          <li><a class="footer-link" href="#">iOS app</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Agence</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'admissionP'%}">Admission</a></li>
+          <li><a class="footer-link" href="{% url 'services'%}">Services</a></li>
+          <li><a class="footer-link" href="{% url 'register'%}">s'enregistre</a></li>
+          <li><a class="footer-link" href="{% url 'chypre'%}">Chypre</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Universites</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'ciu'%}">Cypris internationale university </a></li>
+          <li><a class="footer-link" href="{% url 'neu'%}">Near east University</a></li>
+          <li><a class="footer-link" href="{%url 'emu'%}">Eastern Mediteranean University</a></li>
+          <li><a class="footer-link" href="{% url 'bau'%}">Bahçeşehir Cyprus University</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </footer>  
+  <script src="{% static 'javascript/accordian.js'%}"></script>
+  <script src="{% static 'javascript/smooth.js'%}"></script>
+
+</body>
+
+</html>

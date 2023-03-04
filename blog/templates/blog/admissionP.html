@@ -1,0 +1,392 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Always include this line of code!!! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/stylead (2).css'%}" />
+  <link rel="stylesheet" href="{% static 'css/Query.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/university.css'%}">
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+  <title>Admission-process</title>
+</head>
+<style>
+    .left {
+  background-color: rgb(255, 94, 0);
+  color: #fdf9f8;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+</style>
+
+<body>
+
+  <!--header -->
+   <!--header -->
+<!--header -->
+<header class=" header">
+  <img class="logo" src="{%static 'image/newLogos1.png'%}" alt="logo">
+  <nav class=" main-nav">
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link" href="{% url 'HOMES'%}">Accueil</a></li>
+      <li>
+        <a class="main-nav-link" href="{% url 'admissionP'%}">Admission</a>
+
+      </li>
+      <li>
+        <div class="mobile-Display accordion-item">
+            <div class="accordion-item-header">
+              <a class="list-ex" href="">Universites</a>
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <ul class="accord-list">
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+    
+                </ul>
+              </div>
+            </div>
+         
+        </div>
+      </li>
+      <li class="mobile-Display14" >
+        <a id="mobile-Display1" class="  main-nav-link" href="">Universites</a>
+        <div class="mobile-Display1 div-sub">
+          <ion-icon class="icon-drop-down" name="caret-up-sharp"></ion-icon>
+          <ul class="mobile-Display1">
+            <li> <a class="effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+
+          </ul>
+          
+        </div>
+        
+           
+      </li>
+      <li><a class="main-nav-link" href="{% url 'services'%}"> Services</a></li>
+      <li><a class="main-nav-link" href="{% url 'chypre'%}"> Chypre </a></li>
+      <li class="mobile-Display">
+       
+       
+         
+      </li>
+    </ul>
+
+  </nav>
+
+  <div class=" sign--header">
+    
+    <a class=" P-btn right btn-login " href="{%url 'login'%}">Se connecter</a>
+    <a class=" P-btn left btn-login   " href="%url 'register'%}">Postiler</a>
+    
+
+  </div>
+  <button class="btn-mobile-nav">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+  </button>
+
+</header>
+<!--emd header-->
+  <!--emd header-->
+  <!-- Section Main  -->
+
+
+  <section class="section-how">
+    <div class="container">
+      <span class="subheading">Comment Ça marche</span>
+      <h2 class="heading-secondary">
+        Les différentes étapes à suivre
+
+      </h2>
+    </div>
+
+    <div class="container grid grid--2-cols grid--center-v">
+
+
+
+
+
+
+
+
+      <!-- STEP 01 -->
+
+      <div class="step-text-box">
+        <p class="step-number">01</p>
+        <h3 class="heading-tertiary">
+          Postuler
+        </h3>
+        <p class="step-description">
+          Après avoir examiné les différentes options d'université,
+          la prochaine étape est de trouver et choisir votre programme
+          d'études. Le processus est très simple. Il suffit de cliquer sur
+          "Postuler maintenant", remplir vos informations et les documents
+          requis dans cette page , puis cliquer sur "Envoyer". Vous recevrez
+          immédiatement une confirmation de réception de votre demande.
+          Notre équipe d'assistance vous informera dès la réception de votre
+          demande par l'université et vous tiendra informé de tout changement
+          concernant son statut.
+        </p>
+      </div>
+
+      <div class="step-img-box">
+        <img src="{% static 'image/Checklist-list.png' %}" class="step-img" alt="iPhone app
+            preferences selection screen" />
+      </div>
+
+      <!-- STEP 02 -->
+      <div class="step-img-box">
+        <img src="{%static 'image/accepted.jpg'%}" class="step-img" alt="iPhone app
+            meal approving plan screen" />
+      </div>
+      <div class="step-text-box">
+        <p class="step-number">02</p>
+        <h3 class="heading-tertiary">l'obtention du lettre d'acceptation conditionnelle</h3>
+        <p class="step-description">
+          Une fois qu'un étudiant a été accepté avec succès par l'université,
+          un processus d'acceptation en deux étapes commence. Pour confirmer
+          l'admission, l'université délivrera une lettre d'acceptation conditionnelle
+          / provisoire pour vous, que vous recevrez par e-mail. La lettre d'acceptation
+          comprendra le nom de l'étudiant, la date de naissance, le semestre d'admission et la formation
+          accordée.
+        </p>
+        <p class="step-description">
+          La lettre d'acceptation conditionnelle indiquera également le montant que l'étudiant doit payer pour
+          obtenir une admission inconditionnelle et le compte bancaire où l'argent doit être déposé. Ce frais
+          est connu sous le nom de dépôt et contribue à la scolarité pour ce semestre respectif. Dans la
+          plupart des cas,
+          le dépôt attendu se situe entre 1000 et 1500 € et varie d'une université à l'autre.
+          <strong> veillez Note</strong> paiement se fait directement entre l'étudiant et l'université
+          respective.
+        </p>
+      </div>
+
+      <!-- STEP 03 -->
+      <div class="step-text-box">
+        <p class="step-number">03</p>
+        <h3 class="heading-tertiary"> Payement </h3>
+        <p class="step-description">
+        <p class="step-description">
+          La lettre d'acceptation conditionnelle précisera également le coût à payer
+          pour une admission définitive ainsi que les coordonnées bancaires où il convient de transférer le
+          montant requis.
+          le dépôt attendu se situe entre 1000 et 1500 € et varie d'une université à l'autre.
+        </p>
+        </p>
+      </div>
+      <div class="step-img-box">
+        <img src="{% static 'image/payment.jpg'%}" class="step-img" alt="iPhone app
+            delivery screen" />
+      </div>
+      <!-- STEP 04-->
+      <div class="step-img-box">
+        <img src="{% static 'image/accepted.jpg'%}" class="step-img" alt="iPhone app
+            meal approving plan screen" />
+      </div>
+      <div class="step-text-box">
+        <p class="step-number">04</p>
+        <h3 class="heading-tertiary">Obtention de la lettre d'acceptation inconditionnelle</h3>
+        <p class="step-description">
+          Cette lettre ne sera envoyée
+          par l'université que lorsqu'elle aura reçu et confirmé le paiement du dépôt
+          . Une fois que vous avez reçu la lettre d'acceptation inconditionnelle,que vous recevrez par e-mail
+          dans votre account safari travel.
+
+        </p>
+      </div>
+
+
+      <!-- STEP 05-->
+      <div class="step-img-box">
+        <img src="{%static 'image/accomotion.jpg'%}" class="step-img" alt="iPhone app
+              delivery screen" />
+      </div>
+      <div class="step-text-box">
+        <p class="step-number">05</p>
+        <h3 class="heading-tertiary"> Logement </h3>
+        <p class="step-description">
+        <p class="step-description">
+          Le logement est un aspect important à considérer après
+          la confirmation de la date de voyage et du visa. Les
+          universités proposent souvent un logement sur le campus,
+          mais il existe également des options hors campus. Safari
+          Travel peut aider à trouver un logement abordable en dehors
+          du campus. Résider dans une résidence universitaire offre des
+          avantages tels que des services technologiques, culturels
+          et sportifs, ainsi qu'une sécurité sur le campus, facilitant
+          ainsi l'adaptation à l'université
+        </p>
+        </p>
+      </div>
+
+
+      <!-- STEP 06-->
+      <div class="step-img-box">
+        <img src="{%static 'image/aeport.png'%}" class="step-img" alt="iPhone app
+              meal approving plan screen" />
+      </div>
+      <div class="step-text-box">
+        <p class="step-number">06</p>
+        <h3 class="heading-tertiary">Partagez avec nous les détails</h3>
+        <p class="step-description">
+          Partagez avec nous les détails de votre vol afin de
+          afin d'organiser le transport
+          depuis l'aéroport d'Ercan
+          Les étudiants potentiels réservent leurs vols à l'aéroport d'Ercan,
+          Chypre du Nord et communiquent à l'Agence les détails de leur vol
+          afin d'organiser leur transport vers leur campus.
+
+        </p>
+      </div>
+
+
+    </div>
+
+  </section>
+  <section id="cdt" class=" container section-how">
+    <div class=" ">
+      <p class="step-INFO step-number"></p>
+      <h3 class="heading-tertiary">Informaton a savoir</h3>
+      <p class="step-description">
+      <p class="p-cdt">3 SESSIONS DE LA RENTREE ACADEMIQUE ET DE VOYAGE A CHYPRE ORGANISEES
+        PAR ANNEE au libre choix du candidat pour l’inscription et voyage </p>
+      <p class="informatıon">Session</p>
+      <ul class="session">
+        <li>session d’études de Février</li>
+        <li>session d’études de juin</li>
+        <li>session d’études de Septembre-octobre</li>
+      </ul>
+
+
+
+      <h4 class="document-p">DOCUMENT A FOURNIR POUR L’INSCRIPTION ET VOYAGE</h4>
+
+      <p class="informatıon">Pour Bachelier :</p>
+      <ul class="session">
+        <li> passeport</li>
+        <li> Diplôme/tenant lieu 51%</li>
+        <li>bulletin de côtes de deux dernières années terminales ( 5eme et 6eme)</li>
+      </ul>
+
+      <p class="informatıon">Pour le cycle de Master :</p>
+
+      <ul class="session">
+        <li> Passeport</li>
+        <li> Diplôme d’ état/tenant lieu </li>
+        <li> Relevés de côtes universitaires + diplômes</li>
+      </ul>
+      <strong class="informatıon"> tous ces documents traduits en anglais, le cas échéant.</strong>
+
+      </p>
+      <p class="step-description">
+        <strong>NOTE: </strong> Exception faite pour les élèves finalistes de secondaires ;
+        ils ouvrent leur dossier pour pré-inscription avec
+        le bulletin de 5eme , en attendant les résultats
+        des examens d’ état/ Bac pour confirmation.
+      </p>
+
+    </div>
+  </section>
+
+  </main>
+
+  <!--***************************************************************************************foooter***********************************************************-->
+  <footer  class="footer">
+    <div class="grid--footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img class="logo1" alt="safari logo" src="{%static 'image/Logos back.png'%}" />
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="https://instagram.com/safary_travel_?igshid=YmMyMTA2M2Y="
+              target="_blank"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.youtube.com/@safaritravel9538" target="_blank"><ion-icon
+                class="social-icon" name="logo-youtube"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#" target="_blank"><ion-icon class="social-icon"
+                name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; <span class="year">2023</span>-build by x-software, Inc.
+          All rights reserved.
+        </p>
+      </div>
+
+      <div class="address-col">
+        <p class="footer-heading">Address</p>
+        <address class="contacts">
+          <p class="address">
+            Chypre, Nicosias
+          </p>
+          <p>
+            <a class="footer-link" href="tel: +90 5338245381"> 533-824-5381</a><br />
+            <a class="footer-link" href="tel:+905488423150">548-842-3150</a><br />
+            <a class="footer-link" href="tel:+905338421811">533-842-1811</a><br />
+
+            <a class="footer-link" href="mailto:hello@omnifood.com"></a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">compte</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Creer un compte</a></li>
+          <li><a class="footer-link" href="#"> Postiler</a></li>
+          <li><a class="footer-link" href="#">iOS app</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Agence</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="admissionP.html">Admission</a></li>
+          <li><a class="footer-link" href="services.html">Services</a></li>
+          <li><a class="footer-link" href="log in.html">s'enregistre</a></li>
+          <li><a class="footer-link" href="chypre.html">Chypre</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Universites</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'ciu'%}">Cypris internationale university </a></li>
+          <li><a class="footer-link" href="{% url 'neu'%}">Near east University</a></li>
+          <li><a class="footer-link" href="{%url 'emu'%}">Eastern Mediteranean University</a></li>
+          <li><a class="footer-link" href="{% url 'bau'%}">Bahçeşehir Cyprus University</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="{% static 'javascript/accordian.js'%}"></script>
+  <script src="{% static 'javascript/smooth.js'%}"></script>
+
+</body>
+
+</html>

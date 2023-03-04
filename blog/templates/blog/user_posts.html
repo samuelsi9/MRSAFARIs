@@ -1,0 +1,84 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<style>
+  p{
+   background-color: rgb(255, 253, 250);
+   border: 1px solid rgb(177, 175, 175);
+   display: flex;
+   gap: 10px;
+   padding: 5px 10px;
+   box-shadow: 2px 0px 2px 2px rgb(255, 242, 242);
+  }
+  span{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+  }
+
+</style>
+    <h1 class="mb-3">Dossier  {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
+    {% for post in posts %}
+        <article class="media content-section">
+          <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+            </div>
+            <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
+              <p class="article-content"><span>Nom:</span>{{ post.NOM}}</p>
+              <p class="article-content"><span>Post-nom:</span>{{ post.POSTNOM}}</p>
+              <p class="article-content"><span>Prenom:</span>{{ post.PRENOM}}</p>
+              <p class="article-content"><span>Universite:</span>{{ post.UNIVERSITE}}</p>
+              <p class="article-content"><span>Programme:</span>{{ post.PROGRAMME}}</p>
+              <p class="article-content"><span>Faculte:</span>{{ post.FACULTE}}</p>
+              <p class="article-content"><span>Departement:</span>{{ post.DEPARTEMENT}}</p>
+              <p class="article-content"><span>Logement:</span>{{ post.LOGEMENT}}</p>
+              <p class="article-content"><span>Nom du pere:</span>{{ post.NOM_DU_PERE}}</p>
+              <p class="article-content"> <span>Nom du la mere:</span>{{ post.NOM_DE_LA_MERE}}</p>
+              <p class="article-content"><span>Pays:</span>{{ post.PAYS}}</p>
+              <p class="article-content"><span>Tel:</span>{{ post.NUMERO_DE_TEL}}</p>
+              {% if post.PHOTO %}
+    <a href="{% url 'download_file' pk=post.pk %}?type=photo" download>Telecharge Photo</a>
+{% endif %}
+{% if post.DIPLOMES %}
+    <a href="{% url 'download_file' pk=post.pk %}?type=diplome" download>Telecharge Diplome</a>
+{% endif %}
+{% if post.COPIE_DU_PASSPORT %}
+    <a href="{% url 'download_file' pk=post.pk %}?type=passport" download>Telecharge Passport</a>
+{% endif %}
+{% if post.NIVEAU_EN_ANGLAIS %}
+    <a href="{% url 'download_file' pk=post.pk %}?type=niveau" download>Telecharge Niveau</a>
+{% endif %}
+
+
+
+
+
+
+          </div> 
+        </article>
+    {% endfor %}
+    {% if is_paginated %}
+
+      {% if page_obj.has_previous %}
+        <a class="btn btn-outline-info mb-4" href="?page=1">First</a>
+        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+      {% endif %}
+
+      {% for num in page_obj.paginator.page_range %}
+        {% if page_obj.number == num %}
+          <a class="btn btn-info mb-4" href="?page={{ num }}">{{ num }}</a>
+        {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+          <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{ num }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if page_obj.has_next %}
+        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+      {% endif %}
+
+    {% endif %}
+{% endblock content %}

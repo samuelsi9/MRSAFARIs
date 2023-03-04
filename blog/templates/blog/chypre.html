@@ -1,0 +1,365 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{%static 'Css/style.css'%}">
+  <link rel="stylesheet" href="{%static 'Css/ca.css'%}">
+  <link rel="stylesheet" href="{%static 'Css/Query.css'%}">
+  <link rel="stylesheet" href="{%static 'Css/university.css'%}">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <title>chypre-info</title>
+  <style>
+       .left {
+  background-color: rgb(255, 94, 0);
+  color: #fdf9f8;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+  </style>
+</head>
+
+<body>
+
+
+  <!--header -->
+   <!--header -->
+ <!--header -->
+<header class=" header">
+  <img class="logo" src="{%static 'image/newLogos1.png'%}" alt="logo">
+  <nav class=" main-nav">
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link" href="{% url 'HOMES'%}">Accueil</a></li>
+      <li>
+        <a class="main-nav-link" href="{% url 'admissionP'%}">Admission</a>
+
+      </li>
+      <li>
+        <div class="mobile-Display accordion-item">
+            <div class="accordion-item-header">
+              <a class="list-ex" href="">Universites</a>
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <ul class="accord-list">
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+    
+                </ul>
+              </div>
+            </div>
+         
+        </div>
+      </li>
+      <li class="mobile-Display14" >
+        <a id="mobile-Display1" class="  main-nav-link" href="">Universites</a>
+        <div class="mobile-Display1 div-sub">
+          <ion-icon class="icon-drop-down" name="caret-up-sharp"></ion-icon>
+          <ul class="mobile-Display1">
+            <li> <a class="effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+
+          </ul>
+          
+        </div>
+        
+           
+      </li>
+      <li><a class="main-nav-link" href="{% url 'services'%}"> Services</a></li>
+      <li><a class="main-nav-link" href="{% url 'chypre'%}"> Chypre </a></li>
+      <li class="mobile-Display">
+       
+       
+         
+      </li>
+    </ul>
+
+  </nav>
+
+  <div class=" sign--header">
+    
+    <a class=" P-btn right btn-login " href="{%url 'login'%}">Se connecter</a>
+    <a class=" P-btn left btn-login   " href="{%url 'register'%}">Postiler</a>
+    
+
+  </div>
+  <button class="btn-mobile-nav">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+  </button>
+
+</header>
+<!--emd header-->
+  <!--emd header-->
+  <!-- Section Main  -->
+
+  <main class="chypre-margin">
+    <!--     ***********************************Section************************************************* -->
+
+    <section class=" section--video">
+
+      <div class="left-about">
+
+        <h1 class="left-heading">Bienvenue en chypre du nord</h1>
+
+        <div class="left-paragraphe">
+          <p class="left-paragraphe-univ"> La République turque de Chypre du Nord est un État autoproclamé qui constitue
+            la partie nord de l'île de Chypre, l'autre partie étant la partie sud de l'île.
+            La partie nord de Chypre est culturellement turque, tandis que la partie sud est grecque. </P>
+
+          <P class=" leftP left-paragraphe-univ">
+            La partie nord de Chypre est située au carrefour de l'Europe, de l'Asie et de l'Afrique. La Turquie, le sud
+            de Chypre,
+            le Liban, la Grèce, l'Égypte, Israël et la Syrie sont ses voisins les plus proches.</p>
+
+          <P class=" leftP left-paragraphe-univ">
+            L'histoire de l'île de Chypre la précède, compte tenu des différends politiques entre les parties nord et
+            sud de l'île. Cependant, le climat
+            idéal et chaud de l'été fait de l'île de Chypre l'une des îles les plus visitées au monde.</p>
+
+          <P class=" leftP  left-paragraphe-univ">
+            Que ce soit pour des études ou une simple visite d'été, la partie nord de Chypre offre des riches sites
+            archéologiques,
+            de châteaux médiévaux, de ruines historiques et de paysages naturels uniques, qui sont autant de recettes
+            pour passer un moment sain, relaxant et amusant.</p>
+          <P class=" leftP left-paragraphe-univ">
+            Le fait que l'île de Chypre du Nord jouisse de plus de 300 jours de soleil ininterrompu, de mers bleues
+            claires, de la beauté d'une campagne intacte et de plages peu fréquentées est la raison pour
+            laquelle elle est l'une des destinations les plus populaires pour les citoyens étrangers retraités des
+            Pays-Bas, du Royaume-Uni, de Grèce, de Russie et d'Allemagne.</p>
+
+
+        </div>
+      </div>
+      <div class="video">
+        <img width="100%" height="100%" src="{%static 'image/cypres-picture.jpg'%}" alt="cyprus pıcture">
+      </div>
+
+  </main>
+  <!--   ************************** Section  Card  ******************************-->
+    
+  <section class="section-card">
+    <!-- card layout-->
+    <h1 class="card--head">Autres Universites</h1>
+
+    <div class="position">
+      <div class="univ--card">
+        <div class="Scale-scale">
+          <img src="{% static 'image/picture.jpg' %}" class="img-Univer" alt="cypris international universite">
+        </div>
+        <div class="tag--card">
+          <p class="txt--tag">Nicosias</p>
+          <p class=" tagO txt--tag">Ciu</p>
+        </div>
+        <h2 class=" txt--Univ">Cyprus international university</h2>
+
+        <div class="tag--list">
+          <div class="list-left">
+            <ul class="left-info">
+              <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+              <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+              <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourse</span> </li>
+              <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+              <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus des infos</span></li>
+            </ul>
+          </div>
+          <div class="list-right">
+            <button class="  btn btn-right"><a href="{% url 'ciu' %}">Voir</a> </button>
+            <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="univ--card">
+        <div class="Scale-scale">
+          <img src="{% static 'image/Emu-card.jpg' %}" class="img-Univer" alt="cypris international universite">
+        </div>
+        <div class="tag--card">
+          <p class="txt--tag">Nicosias</p>
+          <p class=" tagO txt--tag">NEU</p>
+        </div>
+        <h2 class=" txt--Univ">Near east university</h2>
+
+        <div class="tag--list">
+          <div class="list-left">
+            <ul class="left-info">
+              <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+              <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+              <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourse</span> </li>
+              <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+              <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus des infos</span></li>
+            </ul>
+          </div>
+          <div class="list-right">
+            <button class="  btn btn-right"><a href="{% url 'neu' %}">Voir</a> </button>
+            <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="univ--card">
+        <div class="Scale-scale">
+          <img src="{% static 'image/CARD-GIRNE.jpg'%}" class="img-Univer" alt="cypris international universite">
+        </div>
+        <div class="tag--card">
+          <p class="txt--tag">Nicosias</p>
+          <p class=" tagO txt--tag">BAU</p>
+        </div>
+        <h2 class=" txt--Univ">Bahçeşehir_University</h2>
+
+        <div class="tag--list">
+          <div class="list-left">
+            <ul class="left-info">
+              <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+              <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+              <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourses</span> </li>
+              <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+              <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus infos</span></li>
+            </ul>
+          </div>
+          <div class="list-right">
+            <button class="  btn btn-right"><a href="{% url 'bau'%}">Voir</a> </button>
+            <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="univ--card">
+        <div class="Scale-scale">
+          <img src=" {% static 'image/gallery-bau.jpg'%}" class="img-Univer" alt="cypris international universite">
+        </div>
+        <div class="tag--card">
+          <p class="txt--tag">Nicosias</p>
+          <p class=" tagO txt--tag">GAU</p>
+        </div>
+        <h2 class=" txt--Univ">Girne international <br>university</h2>
+
+        <div class="tag--list">
+          <div class="list-left">
+            <ul class="left-info">
+              <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+              <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+              <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourses</span> </li>
+              <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+              <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> plus des infos</span></li>
+            </ul>
+          </div>
+          <div class="list-right">
+            <button class="  btn btn-right"><a href="{% url 'gau'%}">voir</a> </button>
+            <button class="  btn  btn-left"><a href="{% url 'register' %}">postiler</a></button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+  <!--   ************************** Section  Card  ******************************-->
+
+
+</main>
+
+<footer class="footer">
+  <div class="grid--footer">
+    <div class="logo-col">
+      <a href="#" class="footer-logo">
+        <img class="logo1" alt="safari logo" src="{%static 'image/newLogos1.png'%}" />
+      </a>
+
+      <ul class="social-links">
+        <li>
+          <a class="footer-link" href="https://instagram.com/safary_travel_?igshid=YmMyMTA2M2Y="
+            target="_blank"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.youtube.com/@safaritravel9538" target="_blank"><ion-icon
+              class="social-icon" name="logo-youtube"></ion-icon></a>
+        </li>
+        <li>
+          <a class="footer-link" href="#" target="_blank"><ion-icon class="social-icon"
+              name="logo-twitter"></ion-icon></a>
+        </li>
+      </ul>
+
+      <p class="copyright">
+        Copyright &copy; <span class="year">2023</span>-build by x-software, Inc.
+        All rights reserved.
+      </p>
+    </div>
+
+    <div class="address-col">
+      <p class="footer-heading">Address</p>
+      <address class="contacts">
+        <p class="address">
+          Chypre, Nicosias
+        </p>
+        <p>
+          <a class="footer-link" href="tel:  +905338245382"> 533 82 453 82</a><br />
+
+
+          <a class="footer-link" href="mailto:hello@omnifood.com"></a>
+        </p>
+      </address>
+    </div>
+
+    <nav class="nav-col">
+      <p class="footer-heading">compte</p>
+      <ul class="footer-nav">
+        <li><a class="footer-link" href="{% url ''}">Creer un compte</a></li>
+        <li><a class="footer-link" href="{% url' '}"> Postiler</a></li>
+        <li><a class="footer-link" href="#">iOS app</a></li>
+        <li><a class="footer-link" href="#">Android app</a></li>
+      </ul>
+    </nav>
+
+    <nav class="nav-col">
+      <p class="footer-heading">Agence</p>
+      <ul class="footer-nav">
+        <li><a class="footer-link" href="{% url 'admissionP'%}">Admission</a></li>
+        <li><a class="footer-link" href="{% url 'services'%}">Services</a></li>
+        <li><a class="footer-link" href="{% url 'register'%}">s'enregistre</a></li>
+        <li><a class="footer-link" href="{% url 'chypre'%}">Chypre</a></li>
+      </ul>
+    </nav>
+
+    <nav class="nav-col">
+      <p class="footer-heading">Universites</p>
+      <ul class="footer-nav">
+        <li><a class="footer-link" href="{% url 'ciu'%}">Cypris internationale university </a></li>
+        <li><a class="footer-link" href="{% url 'neu'%}">Near east University</a></li>
+        <li><a class="footer-link" href="{%url 'emu'%}">Eastern Mediteranean University</a></li>
+        <li><a class="footer-link" href="{% url 'bau'%}">Bahçeşehir Cyprus University</a></li>
+
+      </ul>
+    </nav>
+  </div>
+</footer>  
+<script src="{% static 'javascript/accordian.js'%}"></script>
+<script src="{% static 'javascript/smooth.js'%}"></script>
+
+</body>
+
+</html>

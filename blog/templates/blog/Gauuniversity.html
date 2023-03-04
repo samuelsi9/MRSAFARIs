@@ -1,0 +1,926 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{%static 'Css/style.css'%}">
+  <link rel="stylesheet" href="{%static 'Css/ca.css'%}">
+
+  <link rel="stylesheet" href="{%static 'Css/university.css'%}">
+  <link rel="stylesheet" href="{%static  'Css/Query.css'%}">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>Girne American University</title>
+
+  <style>
+    .section-uni-video {
+  background: url('/static/image/Background5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left {
+  background-color: rgb(255, 94, 0);
+  color: #fdf9f8;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+   
+  </style>
+
+</head>
+<!--<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* font-size: 10px; */
+  
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+    overflow-x: hidden;
+  
+    /* Does NOT work on Safari */
+    /* scroll-behavior: smooth; */
+  }
+body{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   line-height: 1;
+   font-weight: 400;
+   color:#555;
+      z-index: 30;
+      background-color: #f0eae5;
+  
+      
+
+      
+  
+}
+
+.main{
+  background-color: #fccea6;
+  
+
+}
+.section-uni-video{
+    display:grid;
+    grid-template-columns:  0.4fr 0.4fr;
+    
+   
+   
+    background-color: rgb(240, 231, 231);
+    margin-top: 9.5rem;
+   justify-content: center;
+ 
+    
+
+
+      
+    
+}
+.left--video{
+  overflow: hidden;
+  background-color: rgb(226, 250, 250);
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ 
+}
+.right--video{
+  background-color: #d3d4d6;
+  border-bottom-right-radius:50px ;
+ 
+
+
+}
+.left--video-text{
+width: 500px;
+height: 90px;
+}
+
+.left--video-text h1{
+ font-size: 3.2rem;
+ font-weight: 700;
+
+}
+.left--video-text p{
+  line-height: 2.09;
+  
+}
+.img-video{
+  width: 100%;
+
+  
+  
+
+}
+
+p{
+  font-size: 1.8rem;
+  margin-bottom: 3.2rem;
+  line-height: 2.02;
+
+}
+.about-university{
+    
+      display: grid;
+    
+      grid-template-columns: 30rem 0.9fr 40rem;
+
+      grid-template-rows: 8rem 1fr;
+       padding: 0rem 9.5rem 9.5rem 9.5rem;
+       row-gap: 1rem;
+       margin-bottom: -12.5rem;
+     
+
+ 
+}
+.video-about-university{
+    margin-top: 5.5rem;
+    padding:  0   9.5rem;
+  }
+.left1{
+   /* background-color: rgb(176, 61, 126)*/
+  grid-row: 2/-1;
+height: 500px;
+
+}
+.center1{
+background-color:rgb(248, 220, 210);
+   grid-column: 2/3;
+   grid-row: 2/-1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 10;
+   
+   box-shadow: 0 1.2rem 3.2rem  rgba(26, 25, 25, 0.03);
+
+}
+.text-center{
+  width: 800px;
+}
+.right1{
+    
+   grid-row: -4/-1;
+   height: 400px;
+   
+}
+/***************TABLE************** */
+    
+      table {
+        width: 341px;
+        
+        font-size: 1.6rem;
+        /* border: 1px solid #343a40; */
+        border-collapse: collapse;
+        
+      }
+      .table-view{
+        width: 800px;
+      }
+      .table-view th,.table-view td{
+        padding: 1.2rem 2.4rem;
+      }
+
+      th,
+      td {
+        /* border: 1px solid #343a40; */
+        padding: 3px 6px;
+        text-align: left;
+        font-size: 1.4rem;
+      }
+      td{
+        font-size: 1.2rem;
+      }
+
+      thead tr {
+         background-color: #fccea6;
+         font-size: 1.2rem;
+         
+        color: rgb(66, 56, 44);
+      }
+
+      thead th {
+        width: 25%;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #e9ecef;
+      }
+  
+/*******ACCCORDİAN************/
+
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+  }
+  .accordian-depart{
+margin-bottom: 9.6rem;
+  }
+  
+  .accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  .accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    font-size:1.6rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  }
+  .accordion-item-header {
+    padding: 0.7rem 0.7rem 0.7rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+  }
+  .accordion-item-header.active::after {
+    content: "\2212";
+  }
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  }
+  
+  @media(max-width:767px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  /****** Video *****/
+  .section-univ-video{
+   
+
+    
+  
+
+}
+ 
+</style>-->
+
+<body>
+
+
+  <!--header -->
+   <!--header -->
+<!--header -->
+<header class=" header">
+  <img class="logo" src="{%static 'image/newLogos1.png'%}" alt="logo">
+  <nav class=" main-nav">
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link" href="{% url 'HOMES'%}">Accueil</a></li>
+      <li>
+        <a class="main-nav-link" href="{% url 'admissionP'%}">Admission</a>
+
+      </li>
+      <li>
+        <div class="mobile-Display accordion-item">
+            <div class="accordion-item-header">
+              <a class="list-ex" href="">Universites</a>
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <ul class="accord-list">
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+    
+                </ul>
+              </div>
+            </div>
+         
+        </div>
+      </li>
+      <li class="mobile-Display14" >
+        <a id="mobile-Display1" class="  main-nav-link" href="">Universites</a>
+        <div class="mobile-Display1 div-sub">
+          <ion-icon class="icon-drop-down" name="caret-up-sharp"></ion-icon>
+          <ul class="mobile-Display1">
+            <li> <a class="effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+
+          </ul>
+          
+        </div>
+        
+           
+      </li>
+      <li><a class="main-nav-link" href="{% url 'services'%}"> Services</a></li>
+      <li><a class="main-nav-link" href="{% url 'chypre'%}"> Chypre </a></li>
+      <li class="mobile-Display">
+       
+       
+         
+      </li>
+    </ul>
+
+  </nav>
+
+  <div class=" sign--header">
+    
+    <a class=" P-btn right btn-login " href="{%url 'login'%}">Se connecter</a>
+    <a class=" P-btn left btn-login   " href="{%url 'register'%}">Postiler</a>
+    
+
+  </div>
+  <button class="btn-mobile-nav">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+  </button>
+
+</header>
+<!--emd header-->
+  <!--emd header-->
+  <!-- Section Main  -->
+  <main>
+
+    <section class="section-uni-video"
+      >
+      <div class="right--video">
+        <img class="img-video" src="{%static  'image/graduate-students-wearing-cap-gown.jpg'%}" alt="">
+
+      </div>
+      <div class="left--video">
+        <div class="left--video-text">
+          <img class="univ-logos-left" src="{%static  'image/girne-american-university-.png'%}" alt="Client 2">
+          <h1>Bienvenue à Girne American University</h1>
+
+
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+    <section class="about-university">
+
+      <div class="left1">
+
+        <h1>Autre information</h1>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Bourse 
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <p class="paragraph"><strong> Aide financière et bourses d'études:</strong>
+                  Chaque année académique, les étudiants de GAU qui réussissent sont récompensés par des bourses
+                  compétitives pour les frais de scolarité supplémentaires de 75% ou 100% afin de soutenir leurs études.
+                  Les étudiants de GAU ont la possibilité de recevoir des bourses sous trois formes.</p>
+
+                <p class="paragraph"><strong> Bourse d'excellence</strong>
+
+                  Les étudiants qui obtiennent un CGPA de 3,50 ou plus après leur première année d'études (semestres de
+                  printemps et d'automne) peuvent demander une bourse supplémentaire pour les frais de scolarité.
+                </p>
+
+                <p class="paragraph"> <strong>Bourse d'équivalence de travail</strong>
+
+                  Les étudiants peuvent bénéficier d'une bourse d'équivalence de travail en travaillant dans les unités
+                  et installations pertinentes de notre université.
+                </p>
+
+                <p class="paragraph"> <strong> Bourse d'études sportives</strong>
+
+                  Les étudiants qui sont sélectionnés par notre école de sport pour représenter l'université peuvent
+                  bénéficier d'une bourse de 100 % pour les frais de scolarité liés au sport. Toutes les bourses
+                  d'études sont soumises à la disponibilité. Les étudiants qui abandonnent un cours sont susceptibles de
+                  perdre leur droit à une bourse d'études. Après avoir terminé la Foundation English School de
+                  l'université, les meilleurs étudiants reçoivent des bourses supplémentaires</p>
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Logement
+            </div>
+            <div class="accordion-item-body  accordian-depart">
+              <div class="accordion-item-body-content">
+                <p class="paragraph">girne-american-university offre une solution d'hébergement complète pour ses
+                  étudiants grâce à sa gamme diverse bâtiments de dortoirs. Conçus pour offrir un environnement d'étude
+                  favorable, ces dortoirs sont équipés de commodités de pointe, notamment d'internet illimité, d'une
+                  télévision LCD, de chaînes de télévision sans fil, d'un bureau et d'une chaise d'étude,
+                  d'un placard, d'un lit confortable, d'un mini-réfrigérateur. </p>
+                <p class="paragraph">mais aussi les étudiants peuvent également trouver un logement en dehors du campus
+                  à moindre coût.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5 class="faculte-explore"> Voir Tous les Programmes des facultés </h5>
+        <a class="view-all" href="{% url 'undergau'%}">Click ici</a>
+      </div>
+      <div class="center1">
+        <h1>Presentation de Girne American University</h1>
+        <div class="text-center">
+          <p>
+            Une université de premier plan, classée "parmi les 100 meilleures universités prestataires d'enseignement
+            supérieur" dans le
+            classements Eduniversal
+            Première université privée de Chypre, créée en 1985, dispensant un enseignement supérieur avec une
+            expérience de 35
+            ans
+            Fiers de ses anciens élèves ; plus de 18 000 diplômés provenant de 135 pays du monde entier
+            Programmes académiques accrédités par de prestigieux organismes d'accréditation aux États-Unis et en Europe.
+            Une université mondiale avec 7 campus internationaux sur 3 continents.
+
+
+          </p>
+          <p>
+            Une excellente éducation dispensée par des chercheurs dévoués et qualifiés
+            Un programme d'études et une expérience étudiante qui équipent les diplômés pour la réussite personnelle et
+            professionnelle.
+            Fournissant un accès au système d'apprentissage américain avec des programmes accrédités au niveau
+            international.
+            Offre 71 programmes de premier cycle dans 11 facultés, 8 écoles, une Graduate School et une Foundation
+            English.
+            École
+            Un campus moderne qui accueille 20 000 étudiants de 135 pays du monde entier
+            Bibliothèque avec 20 abonnements à des bases de données scientifiques, 20 155 livres imprimés, 22 949 revues
+            électroniques et 165 166
+            livres électroniques
+
+          </p>
+
+
+
+          <div class="video-about">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/qQh_szp8crY" controls=0
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <h1>Frais de scolarité abordables</h1>
+
+
+        </div>
+        <table class="table-view">
+          <thead>
+            <tr>
+              <th>Par Faculté</th>
+              <th>Montant</th>
+
+
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th>Medecine</th>
+              <td>€ 7525</td>
+
+
+            </tr>
+            <tr>
+              <th>Pharmacie</th>
+              <td>€ 4961</td>
+
+
+            </tr>
+            <tr>
+              <th>facultés de droits</th>
+              <td>€ 3100</td>
+
+
+            </tr>
+            <tr>
+              <th>Pilotage</th>
+              <td>€6945</td>
+
+
+            </tr>
+            <tr>
+              <th>Pilotage ATPL flight certifica</th>
+              <td>€13770</td>
+
+
+            </tr>
+            <tr>
+              <th>école d'infirmières</th>
+              <td>€3100</td>
+
+
+            </tr>
+            <tr>
+              <th>faculté d'ingénierie</th>
+              <td>€3100</td>
+
+
+            </tr>
+            <tr>
+              <th>Faculté d'architecture,
+                de design et des beaux-arts</th>
+              <td>€3100</td>
+
+
+            </tr>
+            <tr>
+              <th>Business/Eduction/human <br>science/Gastronomi/tourism/heath science commmunicatıon</th>
+              <td>€3100</td>
+
+
+            </tr>
+            <tr>
+              <th>Business/Éducation/sciences humaines Gastronomie/tourisme/sciences de la santé commmunicatıon</th>
+              <td>€3100</td>
+
+
+            </tr>
+            <tr>
+              <th> L'Ecole d'aviation/ L'Ecole de sport</th>
+              <td>€3100</td>
+
+
+            </tr>
+            <tr>
+              <th>
+                art de la scène</th>
+              <td>€6800</td>
+
+
+            </tr>
+            <tr>
+              <th>
+                vocational school
+              </th>
+              <td>€6800</td>
+
+
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+
+      </div>
+      <div class="right1">
+        <h1>Fees and Scholarships</h1>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Master de programmme pour 2ans
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <table>
+                  <thead>
+                    <tr>
+                      <th> Frais</th>
+                      <th>Montant</th>
+                      <th></th>
+
+
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Frais </td>
+                      <td>€ 2650</td>
+                      <td>Frais du programme complet</td>
+
+                    </tr>
+                    <tr>
+                      <td> 5%TVA,enregistrement,frais d'dossier inclus</td>
+                      <td>€ 2650</td>
+                      <td></td>
+
+
+                    </tr>
+
+
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Programmes de doctorat
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <table>
+                  <thead>
+                    <tr>
+                      <th> Frais</th>
+                      <th>Montant</th>
+                      <th></th>
+
+
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Frais </td>
+                      <td>€ 7250</td>
+                      <td>Frais du programme complet</td>
+
+                    </tr>
+                    <tr>
+                      <td> Frais d'dossier</td>
+                      <td>€ 50</td>
+                      <td>Payé une seule fois</td>
+
+
+                    </tr>
+                    <tr>
+                      <td>Frais d'enregistrement</td>
+                      <td>€ 400</td>
+                      <td>Payé une seule fois</td>
+
+                    </tr>
+                    <tr>
+                      <td>"5% TVA sur les frais"</td>
+                      <td>€ 385</td>
+                      <td></td>
+
+                    </tr>
+                    <thead>
+                      <tr>
+                        <td>Montant total</td>
+                        <td>€8085</td>
+                        <td></td>
+
+                      </tr>
+                    </thead>
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+    </section>
+
+  </main>
+    <!--   ************************** Section  Card  ******************************-->
+    
+    <section class="section-card">
+      <!-- card layout-->
+      <h1 class="card--head">Autres Universites</h1>
+
+      <div class="position">
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/picture.jpg' %}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">Ciu</p>
+          </div>
+          <h2 class=" txt--Univ">Cyprus international university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourse</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'ciu' %}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/Emu-card.jpg' %}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">NEU</p>
+          </div>
+          <h2 class=" txt--Univ">Near east university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourse</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'neu' %}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/CARD-GIRNE.jpg'%}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">BAU</p>
+          </div>
+          <h2 class=" txt--Univ">Bahçeşehir_University</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourses</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'bau'%}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src=" {% static 'image/gallery-bau.jpg'%}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">GAU</p>
+          </div>
+          <h2 class=" txt--Univ">Girne international <br>university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourses</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'gau'%}">voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <!--   ************************** Section  Card  ******************************-->
+
+
+  </main>
+  
+  <footer class="footer">
+    <div class="grid--footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img class="logo1" alt="safari logo" src="{%static 'image/newLogos1.png'%}" />
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="https://instagram.com/safary_travel_?igshid=YmMyMTA2M2Y="
+              target="_blank"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.youtube.com/@safaritravel9538" target="_blank"><ion-icon
+                class="social-icon" name="logo-youtube"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#" target="_blank"><ion-icon class="social-icon"
+                name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; <span class="year">2023</span>-build by x-software, Inc.
+          All rights reserved.
+        </p>
+      </div>
+
+      <div class="address-col">
+        <p class="footer-heading">Address</p>
+        <address class="contacts">
+          <p class="address">
+            Chypre, Nicosias
+          </p>
+          <p>
+            <a class="footer-link" href="tel:  +905338245382"> 533 82 453 82</a><br />
+
+
+            <a class="footer-link" href="mailto:hello@omnifood.com"></a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">compte</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url ''}">Creer un compte</a></li>
+          <li><a class="footer-link" href="{% url' '}"> Postiler</a></li>
+          <li><a class="footer-link" href="#">iOS app</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Agence</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'admissionP'%}">Admission</a></li>
+          <li><a class="footer-link" href="{% url 'services'%}">Services</a></li>
+          <li><a class="footer-link" href="{% url 'register'%}">s'enregistre</a></li>
+          <li><a class="footer-link" href="{% url 'chypre'%}">Chypre</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Universites</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'ciu'%}">Cypris internationale university </a></li>
+          <li><a class="footer-link" href="{% url 'neu'%}">Near east University</a></li>
+          <li><a class="footer-link" href="{%url 'emu'%}">Eastern Mediteranean University</a></li>
+          <li><a class="footer-link" href="{% url 'bau'%}">Bahçeşehir Cyprus University</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </footer>  
+  <script src="{% static 'javascript/accordian.js'%}"></script>
+  <script src="{% static 'javascript/smooth.js'%}"></script>
+
+</body>
+
+</html>

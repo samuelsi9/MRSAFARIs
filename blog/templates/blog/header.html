@@ -1,0 +1,111 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'Css/style.css'%}">
+  <link rel="stylesheet" href="{% static  'Css/ca.css'%}">
+  <link rel="stylesheet" href="{% static  'Css/Query.css'%}">
+  <link rel="stylesheet" href="{% static  'Css/university.css'%}">
+  <link href="url 'https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  !--header -->
+  <header class=" header">
+    <img class="logo" src="{%static 'image/newLogos1.png'%}" alt="logo">
+    <nav class=" main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link" href="{% url 'HOMES'%}">Accueil</a></li>
+        <li>
+          <a class="main-nav-link" href="{% url 'admissionP'%}">Admission</a>
+  
+        </li>
+        <li>
+          <div class="mobile-Display accordion-item">
+              <div class="accordion-item-header">
+                <a class="list-ex" href="">Universites</a>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <ul class="accord-list">
+                    <li> <a class=" mobile effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+                    <li> <a class=" mobile effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+                    <li> <a class=" mobile effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+                    <li> <a class=" mobile effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+                    <li> <a class=" mobile effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+      
+                  </ul>
+                </div>
+              </div>
+           
+          </div>
+        </li>
+        <li class="mobile-Display14" >
+          <a id="mobile-Display1" class="  main-nav-link" href="">Universites</a>
+          <div class="mobile-Display1 div-sub">
+            <ion-icon class="icon-drop-down" name="caret-up-sharp"></ion-icon>
+            <ul class="mobile-Display1">
+              <li> <a class="effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+              <li> <a class="effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+              <li> <a class="effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+              <li> <a class="effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+              <li> <a class="effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+  
+            </ul>
+            
+          </div>
+          
+             
+        </li>
+        <li><a class="main-nav-link" href="{% url 'services'%}"> Services</a></li>
+        <li><a class="main-nav-link" href="{% url 'chypre'%}"> Chypre </a></li>
+        <li class="mobile-Display">
+         
+         
+           
+        </li>
+      </ul>
+  
+    </nav>
+  
+    <div class=" sign--header">
+      {% if user.is_authenticated %}
+      <a class=" P-btn right btn-login " href="{%url 'profileupdate'%}">Profile</a>
+      <a class=" P-btn left btn-login   " href="{%url 'logout'%}">Se deconnecter</a>
+      {% else  %}
+      <a class=" P-btn right btn-login " href="{%url 'login'%}">Se connecter</a>
+      <a class=" P-btn left btn-login   " href="{%url 'register'%}">Postiler</a>
+      {% endif %}   
+  
+    </div>
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+  
+    </button>
+  
+  </header>
+  <!--emd header-->
+  <!-- Section Main  -->
+  <script src="javascript/accordian.js"></script>
+  <script src="javascript/smooth.js"></script>
+  <div>
+    {% block content %}
+
+{% endblock %}
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'Css/style.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/ca.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/styleadmin.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/university.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/Query.css'%}">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <style>
+    .section-uni-video {
+  background: url('/static/image/Background5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;}
+  .table-view{
+    
+   overflow-y: scroll;
+  }
+  .left {
+  background-color: rgb(255, 94, 0);
+  color: #fdf9f8;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+
+   
+  </style>
+  <title>Cyprus international</title>
+</head>
+<!--<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* font-size: 10px; */
+  
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+    overflow-x: hidden;
+  
+    /* Does NOT work on Safari */
+    /* scroll-behavior: smooth; */
+  }
+body{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   line-height: 1;
+   font-weight: 400;
+   color:#555;
+      z-index: 30;
+      background-color: #f0eae5;
+  
+      
+
+      
+  
+}
+
+.main{
+  background-color: #fccea6;
+  
+
+}
+.section-uni-video{
+    display:grid;
+    grid-template-columns:  0.4fr 0.4fr;
+    
+   
+   
+    background-color: rgb(240, 231, 231);
+    margin-top: 9.5rem;
+   justify-content: center;
+ 
+    
+
+
+      
+    
+}
+.left--video{
+  overflow: hidden;
+  background-color: rgb(226, 250, 250);
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ 
+}
+.right--video{
+  background-color: #d3d4d6;
+  border-bottom-right-radius:50px ;
+ 
+
+
+}
+.left--video-text{
+width: 500px;
+height: 90px;
+}
+
+.left--video-text h1{
+ font-size: 3.2rem;
+ font-weight: 700;
+
+}
+.left--video-text p{
+  line-height: 2.09;
+  
+}
+.img-video{
+  width: 100%;
+
+  
+  
+
+}
+
+p{
+  font-size: 1.8rem;
+  margin-bottom: 3.2rem;
+  line-height: 2.02;
+
+}
+.about-university{
+    
+      display: grid;
+    
+      grid-template-columns: 30rem 0.9fr 40rem;
+
+      grid-template-rows: 8rem 1fr;
+       padding: 0rem 9.5rem 9.5rem 9.5rem;
+       row-gap: 1rem;
+       margin-bottom: -12.5rem;
+     
+
+ 
+}
+.video-about-university{
+    margin-top: 5.5rem;
+    padding:  0   9.5rem;
+  }
+.left1{
+   /* background-color: rgb(176, 61, 126)*/
+  grid-row: 2/-1;
+height: 500px;
+
+}
+.center1{
+background-color:rgb(248, 220, 210);
+   grid-column: 2/3;
+   grid-row: 2/-1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 10;
+   
+   box-shadow: 0 1.2rem 3.2rem  rgba(26, 25, 25, 0.03);
+
+}
+.text-center{
+  width: 800px;
+}
+.right1{
+    
+   grid-row: -4/-1;
+   height: 400px;
+   
+}
+/***************TABLE************** */
+    
+      table {
+        width: 341px;
+        
+        font-size: 1.6rem;
+        /* border: 1px solid #343a40; */
+        border-collapse: collapse;
+        
+      }
+      .table-view{
+        width: 800px;
+      }
+      .table-view th,.table-view td{
+        padding: 1.2rem 2.4rem;
+      }
+
+      th,
+      td {
+        /* border: 1px solid #343a40; */
+        padding: 3px 6px;
+        text-align: left;
+        font-size: 1.4rem;
+      }
+      td{
+        font-size: 1.2rem;
+      }
+
+      thead tr {
+         background-color: #fccea6;
+         font-size: 1.2rem;
+         
+        color: rgb(66, 56, 44);
+      }
+
+      thead th {
+        width: 25%;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #e9ecef;
+      }
+  
+/*******ACCCORDİAN************/
+
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+  }
+  .accordian-depart{
+margin-bottom: 9.6rem;
+  }
+  
+  .accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  .accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    font-size:1.6rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  }
+  .accordion-item-header {
+    padding: 0.7rem 0.7rem 0.7rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+  }
+  .accordion-item-header.active::after {
+    content: "\2212";
+  }
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  }
+  
+  @media(max-width:767px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  /****** Video *****/
+  .section-univ-video{
+   
+
+    
+  
+
+}
+ 
+</style>-->
+
+<body>
+<!--header -->
+<header class=" header">
+  <img class="logo" src="{%static 'image/newLogos1.png'%}" alt="logo">
+  <nav class=" main-nav">
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link" href="{% url 'HOMES'%}">Accueil</a></li>
+      <li>
+        <a class="main-nav-link" href="{% url 'admissionP'%}">Admission</a>
+
+      </li>
+      <li>
+        <div class="mobile-Display accordion-item">
+            <div class="accordion-item-header">
+              <a class="list-ex" href="">Universites</a>
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <ul class="accord-list">
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+                  <li> <a class=" mobile effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+    
+                </ul>
+              </div>
+            </div>
+         
+        </div>
+      </li>
+      <li class="mobile-Display14" >
+        <a id="mobile-Display1" class="  main-nav-link" href="">Universites</a>
+        <div class="mobile-Display1 div-sub">
+          <ion-icon class="icon-drop-down" name="caret-up-sharp"></ion-icon>
+          <ul class="mobile-Display1">
+            <li> <a class="effect-sub-menu" href="{% url 'ciu'%}">Cyprus international</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'emu'%}">Eastern Mediterranean university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'gau'%}">Girne international university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'neu'%}">Nearest university</a></li>
+            <li> <a class="effect-sub-menu" href="{% url 'bau'%}">Bahçeşehir_University</a></li>
+
+          </ul>
+          
+        </div>
+        
+           
+      </li>
+      <li><a class="main-nav-link" href="{% url 'services'%}"> Services</a></li>
+      <li><a class="main-nav-link" href="{% url 'chypre'%}"> Chypre </a></li>
+      <li class="mobile-Display">
+       
+       
+         
+      </li>
+    </ul>
+
+  </nav>
+
+  <div class=" sign--header">
+    
+    <a class=" P-btn right btn-login " href="{%url 'login'%}">Se connecter</a>
+    <a class=" P-btn left btn-login   " href="{%url 'register'%}">Postiler</a>
+    
+
+  </div>
+  <button class="btn-mobile-nav">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+  </button>
+
+</header>
+<!--emd header-->
+  <!--emd header-->
+  <!-- Section Main  -->
+  <main>
+
+    <section class="section-uni-video"
+      >
+      <div class="right--video">
+        <img class="img-video" src="{%static 'image/picture 6.jpg'%}" alt="">
+
+      </div>
+      <div class="left--video">
+        <div class="left--video-text">
+          <img class="univ-logos-left" src="{%static 'image/ciu-color.png'%}" alt="Client 2">
+          <h1>Bienvenue à Cyprus international universty</h1>
+
+          <p>Libérez votre potentiel , acquérez un avantage compétitif et faites la différence grâce à une education à
+            Cyprus international universty </p>
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+    <section class="about-university"
+      style="background: url(image/background.jpg);background-size: cover; background-repeat: no-repeat;">
+      <div class="left1">
+
+        <h1>Autre information</h1>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Bourses 
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <p class="paragraph"><strong>Bourse d'études à 50%: </strong> Tous les étudiants internationaux de
+                  niveau universitaire bénéficient d'une bourse d'études à 50% à l'Université internationale de Chypre.
+                </p>
+                <p class="paragraph"><strong>Opportunités pour les étudiants de troisième cycle:</strong> Il existe des
+                  opportunités de bourses d'études pour les étudiants de maîtrise et de doctorat à l'Université
+                  internationale de Chypre. Les étudiants de troisième cycle ayant obtenu un diplôme de bachelier avec
+                  une moyenne cumulée de 3,50 et plus peuvent postuler pour une bourse d'études.</p>
+                <p class="paragraph"><strong>Bourse académique:</strong> Tous les étudiants potentiels peuvent postuler
+                  pour une bourse académique en fonction de leur performance académique. Cette bourse varie de 75% à
+                  100% de réduction sur leurs frais de scolarité.</p>
+                <p class="paragraph"><strong>Bourse sportive:</strong> Tous les étudiants potentiels peuvent postuler
+                  pour une bourse sportive en fonction de leur performance athlétique. Cette bourse varie de 75% à 100%
+                  de réduction sur leurs frais de scolarité.</p>
+                <p class="paragraph"><strong>Bourse pour les réalisations:</strong> Tous les étudiants potentiels
+                  peuvent postuler pour une bourse pour les réalisations dans des domaines tels que la musique, les arts
+                  et le service communautaire. Cette bourse varie de 75% à 100% de réduction sur leurs frais de
+                  scolarité.</p>
+                <p class="paragraph"> <strong>Réduction pour les frères et soeurs: </strong> Les frères et soeurs qui
+                  fréquentent l'université bénéficient chacun d'une réduction de 25% sur leurs frais de scolarité
+                  (preuve de parenté requise).</p>
+                <p class="paragraph"><strong>Couple marié:</strong> Les couples mariés fréquentant l'université
+                  bénéficient chacun d'une réduction de 25% sur leurs frais de scolarité (preuve de parenté requise).
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Logement
+            </div>
+            <div class="accordion-item-body  accordian-depart">
+              <div class="accordion-item-body-content">
+                <p class="paragraph">CIU fournit une solution d'hébergement complète pour ses étudiants grâce à sa gamme
+                  diversifiée de 17 bâtiments de dortoirs. Conçus pour offrir un environnement d'étude favorable, ces
+                  dortoirs sont équipés d'installations de pointe, y compris une internet illimitée, une télévision LCD,
+                  des chaînes TV sans fil, un bureau et une chaise d'étude, une bibliothèque, une armoire, un lit
+                  confortable, un mini-réfrigérateur, une connexion téléphonique entre les chambres et une facilité
+                  d'appel externe. </p>
+                <p class="paragraph">Ces dortoirs viennent en deux styles uniques, Studio et Appartement. Les dortoirs
+                  Studio proposent des options de une, deux et quatre chambres, ainsi que des forfaits économiques qui
+                  incluent l'hébergement, une adhésion d'un an à la cafétéria et les frais de scolarité. Le dortoir
+                  Soli, un type Studio, présente des options de chambre simple et double avec un design architectural
+                  contemporain. </p>
+                <p class="paragraph">Pour les étudiants qui souhaitent poursuivre leur vie sur le campus pendant plus
+                  d'un an, CIU a un programme de fidélité qui offre des réductions importantes sur les frais
+                  d'hébergement. Cela comprend une réduction de 15% au second an de séjour, 20% de réduction au
+                  troisième an, 25% de réduction au quatrième an et une réduction de 30% au cinquième an de résidence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5 class="faculte-explore"> Voir Tous les Programmes des facultés </h5>
+        <a class="view-all" href="{% url 'underciu'%}">Click ici</a>
+      </div>
+      <div class="center1">
+        <h1>Presentation de cyprus intenational university</h1>
+        <div class="text-center">
+          <p>La situation géopolitique stratégique de l'île de Chypre et sa proximité avec le berceau de la civilisation
+            ont joué un rôle essentiel dans ce que Chypre est aujourd'hui: une petite mais très internationale île.
+            Cette identité mondiale a été l'inspiration de notre nom. L'Université internationale de Chypre (CIU) a ses
+            racines dans la vision de M. Özer Boyacı, qui voulait établir une institution qui laisserait une marque sur
+            l'enseignement supérieur en Chypre du Nord.</p>
+          <p>L'Université internationale de Chypre (CIU) propose le type d'éducation nécessaire pour réussir dans un
+            monde en constante évolution. Nous invitons les étudiants à explorer leurs passions intellectuelles et
+            personnelles dans l'un des 63 programmes de premier cycle dans 11 facultés, 3 programmes de degré d'associé
+            dans 6 écoles. L'Université propose également des programmes de niveau de maîtrise et de doctorat, avec 60
+            programmes de maîtrise et de doctorat actuellement fournis par l'Institut des études supérieures et de la
+            recherche.</p>
+
+
+
+          <div class="video-about">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/oKu4GAeGjp8?autoplay=1" controls=0
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <h1>Frais de scolarité abordables</h1>
+          <p>
+            L'Université internationale de Chypre (CIU), avec son diplôme reconnu dans le monde entier, offre des
+            services d'éducation et de formation avec la compréhension d'une université qui produit, diffuse et utilise
+            les connaissances universelles et contribue à la société. En plus d'être l'université la plus réussie du
+            Nord de Chypre dans les projets de recherche scientifique, l'Université internationale de Chypre (CIU), qui
+            a accompli de nombreuses études académiques depuis sa création, a également fait de son nom l'institution
+            éducative de pointe de l'île avec sa vie universitaire colorée en termes de social et de sport.
+          </p>
+          <p>
+            Les frais de scolarité et les frais à l'Université internationale de Chypre (CIU) varient selon les niveaux.
+            En fonction du programme choisi par l'étudiant, l'éducation à l'Université internationale de Chypre (CIU)
+            est l'une des plus abordables de la région du Nord de Chypre. Tous les étudiants internationaux inscrits à
+            l'Université internationale de Chypre (CIU) bénéficient d'une bourse de 50% pour la durée totale de leurs
+            études.
+            L'Université internationale de Chypre (CIU) permet également des paiements mensuels en versements pour aider
+            les étudiants davantage à compléter leur éducation sans la charge financière.
+          </p>
+
+        </div>
+        <table class="table-view">
+          <thead>
+            <tr>
+              <th>Programmes de licence</th>
+              <th>Sans bourse</th>
+              <th>Avec bourse</th>
+
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th>Autres programmes</th>
+              <td>€ 5.843,00</td>
+              <td>€ 3.099,00</td>
+
+            </tr>
+            <tr>
+              <th>Pharmacie</th>
+              <td>€ 5.843,00</td>
+              <td>€ 3.099,00</td>
+
+            </tr>
+            <tr>
+              <th>Dentisterie</th>
+              <td>€ 10.645,00</td>
+              <td>€ 5.500,00</td>
+
+            </tr>
+            <tr>
+              <th>Médecine</th>
+              <td>€ 12.955,00</td>
+              <td>€ 6.655,00</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+
+      </div>
+      <div class="right1">
+        <h1>Frais et bourses</h1>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Programmes de licence
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Programmes de licence</th>
+                      <th>Sans bourse</th>
+                      <th>Avec bourse</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th>Autres programmes</th>
+                      <td>€ 5.843,00</td>
+                      <td>€ 3.099,00</td>
+                    </tr>
+                    <tr>
+                      <th>Pharmacie</th>
+                      <td>€ 5.843,00</td>
+                      <td>€ 3.099,00</td>
+                    </tr>
+                    <tr>
+                      <th>Dentisterie</th>
+                      <td>€ 10.645,00</td>
+                      <td>€ 5.500,00</td>
+                    </tr>
+                    <tr>
+                      <th>Médecine</th>
+                      <td>€ 12.955,00</td>
+                      <td>€ 6.655,00</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Master Programs
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Programmes avec thèse</th>
+                      <th>Montant</th>
+
+
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th>Frais par cours</th>
+                      <td>€ 350</td>
+
+                    </tr>
+                    <tr>
+                      <th>Frais pour la thèse</th>
+                      <td>€ 1.050</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Frais pour le séminaire</th>
+                      <td>€ 120</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Fondation scientifique par cours</th>
+                      <td>€ 150</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Frais d'inscription et autres frais</th>
+                      <td>€ 245</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Frais de l'union étudiante</th>
+                      <td>€ 50</td>
+
+
+                    </tr>
+
+
+                  </tbody>
+                </table>
+
+                <br>
+                <h4> Sans thèse</h4>
+                <br>
+
+
+
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Programmes sans thèse</th>
+                      <th>Montant</th>
+
+
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th>Frais par cours</th>
+                      <td>€ 350</td>
+
+                    </tr>
+                    <tr>
+                      <th>Frais pour projet de fin de session</th>
+                      <td>€ 1.050</td>
+
+
+                    </tr>
+
+                    <tr>
+                      <th>Fondation scientifique par cours</th>
+                      <td>€ 150</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Frais d'inscription et autres frais</th>
+                      <td>€ 245</td>
+
+
+                    </tr>
+                    <tr>
+                      <th>Frais de l'union des étudiants</th>
+                      <td>€ 50</td>
+
+
+                    </tr>
+
+
+
+
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Programmes de doctorat
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <table>
+                  <thead>
+
+                    <tr>
+                      <th>Programmes avec thèse</th>
+                      <th>Montant</th>
+                    </tr>
+
+
+
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th>Frais par cours</th>
+                      <td>€ 650</td>
+                    </tr>
+                    <tr>
+                      <th>Frais pour la thèse (4 semestres)</th>
+                      <td>€ 2.600</td>
+                    </tr>
+                    <tr>
+                      <th>Frais pour le séminaire</th>
+                      <td>€ 200</td>
+                    </tr>
+                    <tr>
+                      <th>Fondation scientifique par cours</th>
+                      <td>€ 150</td>
+                    </tr>
+                    <tr>
+                      <th>Frais d'inscription et autres frais</th>
+                      <td>€ 245</td>
+                    </tr>
+                    <tr>
+                      <th>Frais de l'union étudiante</th>
+                      <td>€ 50</td>
+                    </tr>
+
+
+                  </tbody>
+                </table>
+
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+    </section>
+
+
+
+    <!--   ************************** Section  Card  ******************************-->
+    
+    <section class="section-card">
+      <!-- card layout-->
+      <h1 class="card--head">Autres Universites</h1>
+
+      <div class="position">
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/picture.jpg' %}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">Ciu</p>
+          </div>
+          <h2 class=" txt--Univ">Cyprus international university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourse</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'ciu' %}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/Emu-card.jpg' %}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">NEU</p>
+          </div>
+          <h2 class=" txt--Univ">Near east university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourse</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'neu' %}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src="{% static 'image/CARD-GIRNE.jpg'%}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">BAU</p>
+          </div>
+          <h2 class=" txt--Univ">Bahçeşehir_University</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourses</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> Plus infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'bau'%}">Voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">Postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="univ--card">
+          <div class="Scale-scale">
+            <img src=" {% static 'image/gallery-bau.jpg'%}" class="img-Univer" alt="cypris international universite">
+          </div>
+          <div class="tag--card">
+            <p class="txt--tag">Nicosias</p>
+            <p class=" tagO txt--tag">GAU</p>
+          </div>
+          <h2 class=" txt--Univ">Girne international <br>university</h2>
+
+          <div class="tag--list">
+            <div class="list-left">
+              <ul class="left-info">
+                <li> <ion-icon class="icon--info" name="library-outline"></ion-icon> <span> programmes</span></li>
+                <li><ion-icon class="icon--info" name="cash-outline"></ion-icon><span>Frais</span> </li>
+                <li><ion-icon class="icon--info" name="business-outline"></ion-icon> <span>Bourses</span> </li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon> <span>Logement</span></li>
+                <li> <ion-icon class="icon--info" name="bed-outline"></ion-icon><span> plus des infos</span></li>
+              </ul>
+            </div>
+            <div class="list-right">
+              <button class="  btn btn-right"><a href="{% url 'gau'%}">voir</a> </button>
+              <button class="  btn  btn-left"><a href="{% url 'register' %}">postiler</a></button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <!--   ************************** Section  Card  ******************************-->
+
+
+  </main>
+ 
+  <footer class="footer">
+    <div class="grid--footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img class="logo1" alt="safari logo" src="{%static 'image/newLogos1.png'%}" />
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="https://instagram.com/safary_travel_?igshid=YmMyMTA2M2Y="
+              target="_blank"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.youtube.com/@safaritravel9538" target="_blank"><ion-icon
+                class="social-icon" name="logo-youtube"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#" target="_blank"><ion-icon class="social-icon"
+                name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; <span class="year">2023</span>-build by x-software, Inc.
+          All rights reserved.
+        </p>
+      </div>
+
+      <div class="address-col">
+        <p class="footer-heading">Address</p>
+        <address class="contacts">
+          <p class="address">
+            Chypre, Nicosias
+          </p>
+          <p>
+            <a class="footer-link" href="tel:  +905338245382"> 533 82 453 82</a><br />
+
+
+            <a class="footer-link" href="mailto:hello@omnifood.com"></a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">compte</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url ''}">Creer un compte</a></li>
+          <li><a class="footer-link" href="{% url' '}"> Postiler</a></li>
+          <li><a class="footer-link" href="#">iOS app</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Agence</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'admissionP'%}">Admission</a></li>
+          <li><a class="footer-link" href="{% url 'services'%}">Services</a></li>
+          <li><a class="footer-link" href="{% url 'register'%}">s'enregistre</a></li>
+          <li><a class="footer-link" href="{% url 'chypre'%}">Chypre</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Universites</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="{% url 'ciu'%}">Cypris internationale university </a></li>
+          <li><a class="footer-link" href="{% url 'neu'%}">Near east University</a></li>
+          <li><a class="footer-link" href="{%url 'emu'%}">Eastern Mediteranean University</a></li>
+          <li><a class="footer-link" href="{% url 'bau'%}">Bahçeşehir Cyprus University</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </footer>   
+  <script src="{% static 'javascript/accordian.js'%}"></script>
+  <script src="{% static 'javascript/smooth.js'%}"></script>
+
+</body>
+
+</html>
